@@ -15,9 +15,10 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(PROJECT_SOURCES
         src/main.cpp
         src/mainwindow.cpp
-
+        src/maximizer.cpp
 
         include/mainwindow.h
+        include/maximizer.h
         res_file.qrc
 )
 
@@ -25,6 +26,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(uniquness_maximizer
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+
     )
 else()
     if(ANDROID)

@@ -62,9 +62,11 @@ uniquness_maximizer_autogen/timestamp: \
 	C:/Programming/Development/Projs/uniquness_maximizer/build/Desktop_Qt_6_8_3_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Programming/Development/Projs/uniquness_maximizer/build/Desktop_Qt_6_8_3_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Programming/Development/Projs/uniquness_maximizer/include/mainwindow.h \
+	C:/Programming/Development/Projs/uniquness_maximizer/include/maximizer.h \
 	C:/Programming/Development/Projs/uniquness_maximizer/res_file.qrc \
 	C:/Programming/Development/Projs/uniquness_maximizer/src/main.cpp \
 	C:/Programming/Development/Projs/uniquness_maximizer/src/mainwindow.cpp \
+	C:/Programming/Development/Projs/uniquness_maximizer/src/maximizer.cpp \
 	C:/Qt/6.9.3/msvc2022_64/include/QtCore/QDir \
 	C:/Qt/6.9.3/msvc2022_64/include/QtCore/q17memory.h \
 	C:/Qt/6.9.3/msvc2022_64/include/QtCore/q20functional.h \

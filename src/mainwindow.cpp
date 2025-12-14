@@ -11,7 +11,10 @@ MainWindow::MainWindow(QWidget *parent, std::string path)
 
     centralVLayout = new QVBoxLayout(centralWidget);
 
-    argv1Path = QString::fromStdString(path);
+    if (!path.empty()) {
+        argv1Path = QString::fromStdString(path);
+    }
+
     documentPreviewLayout = new QHBoxLayout;
     indicatorsLayout = new QHBoxLayout;
     fileLaunchLayout = new QHBoxLayout;
@@ -35,7 +38,6 @@ MainWindow::MainWindow(QWidget *parent, std::string path)
     chooseFileBtn = new QPushButton("Выберете файл");
     maxUniqBtn = new QPushButton("Начать работу");
     documentNameLnE = new QLineEdit;
-
 
     centralVLayout->addLayout(bufferForStuffLayout);
     bufferForStuffLayout->addWidget(documentPreviewLbl);
@@ -64,7 +66,7 @@ MainWindow::MainWindow(QWidget *parent, std::string path)
     fileLaunchLayout->addWidget(chooseFileBtn);
     fileLaunchLayout->addWidget(maxUniqBtn);
 
-    connect(chooseFileBtn, &QPushButton::clicked, this, [this]() {
+    QObject::connect(chooseFileBtn, &QPushButton::clicked, this, [this]() {
         QString filePath = QFileDialog::getOpenFileName(
             this,
             tr("Выберите Word-файл"),
@@ -75,10 +77,12 @@ MainWindow::MainWindow(QWidget *parent, std::string path)
         if (filePath.isEmpty())
             return;
 
+        argv1Path = filePath;
         documentNameLnE->clear();
         documentNameLnE->setText(filePath);
     });
 
+    QObject::connect(maxUniqBtn, &QPushButton::clicked, this, [](){});
 
 }
 

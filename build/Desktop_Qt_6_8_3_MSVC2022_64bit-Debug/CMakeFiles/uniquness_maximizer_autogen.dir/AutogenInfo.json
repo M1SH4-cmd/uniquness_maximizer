@@ -360,6 +360,12 @@
 			"MU",
 			"6YEA5652QU/moc_mainwindow.cpp",
 			null
+		],
+		[
+			"C:/Programming/Development/Projs/uniquness_maximizer/include/maximizer.h",
+			"MU",
+			"6YEA5652QU/moc_maximizer.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -425,6 +431,11 @@
 		],
 		[
 			"C:/Programming/Development/Projs/uniquness_maximizer/src/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Programming/Development/Projs/uniquness_maximizer/src/maximizer.cpp",
 			"MU",
 			null
 		]

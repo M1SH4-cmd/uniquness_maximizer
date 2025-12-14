@@ -259,3 +259,5 @@ C:/Programming/Development/Projs/uniquness_maximizer/include/mainwindow.h
  mdp:C:/Qt/6.9.3/msvc2022_64/include/QtWidgets/qwidget.h
 C:/Programming/Development/Projs/uniquness_maximizer/src/mainwindow.cpp
 C:/Programming/Development/Projs/uniquness_maximizer/src/main.cpp
+C:/Programming/Development/Projs/uniquness_maximizer/include/maximizer.h
+C:/Programming/Development/Projs/uniquness_maximizer/src/maximizer.cpp
