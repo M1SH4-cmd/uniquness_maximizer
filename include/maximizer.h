@@ -16,6 +16,7 @@ private:
     std::string path;
 
 
+
 };
 
 #endif // MAXIMIZER_H
