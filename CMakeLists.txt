@@ -9,17 +9,27 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Gui Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Gui Core)
 
 set(PROJECT_SOURCES
+        #source code:
         src/main.cpp
         src/mainwindow.cpp
         src/maximizer.cpp
 
+        #headers:
         include/mainwindow.h
         include/maximizer.h
+
+        #qrc files:
         res_file.qrc
+
+        #pugixml lib:
+        lib/pugixml/pugixml.cpp
+
+        #libzip:
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -60,8 +70,19 @@ if(WIN32)
     endif()
 endif()
 
-target_link_libraries(uniquness_maximizer PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-target_include_directories(uniquness_maximizer PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_link_libraries(uniquness_maximizer PRIVATE
+  Qt${QT_VERSION_MAJOR}::Widgets
+  Qt${QT_VERSION_MAJOR}::Gui
+  Qt${QT_VERSION_MAJOR}::Core
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/lib/zip.lib
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/lib/zlib.lib
+)
+target_include_directories(uniquness_maximizer PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/include
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/pugixml
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/include
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/include
+)
 
 if(${QT_VERSION} VERSION_LESS 6.1.0)
   set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.uniquness_maximizer)
@@ -84,3 +105,13 @@ install(TARGETS uniquness_maximizer
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(uniquness_maximizer)
 endif()
+
+add_custom_command(TARGET uniquness_maximizer POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/lib/zip.dll
+        $<TARGET_FILE_DIR:uniquness_maximizer>
+
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/lib/zlib.dll
+        $<TARGET_FILE_DIR:uniquness_maximizer>
+)

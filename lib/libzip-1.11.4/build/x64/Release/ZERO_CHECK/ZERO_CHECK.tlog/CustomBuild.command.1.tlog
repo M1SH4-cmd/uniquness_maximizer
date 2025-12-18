@@ -1,0 +1,10 @@
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\7F309F7AF5EDEC18188282BDF0CD9011\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4 -BC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/libzip.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\build\uniquness_maximizer_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\src\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\src\maximizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\build\uniquness_maximizer_autogen\EWIEGA46WW_Debug\qrc_res_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\build\uniquness_maximizer_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\build\uniquness_maximizer_autogen\EWIEGA46WW_Release\qrc_res_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\build\uniquness_maximizer_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\build\uniquness_maximizer_autogen\EWIEGA46WW_MinSizeRel\qrc_res_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\build\uniquness_maximizer_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\build\uniquness_maximizer_autogen\EWIEGA46WW_RelWithDebInfo\qrc_res_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Programming\Development\Projs\uniquness_maximizer\include\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Programming\Development\Projs\uniquness_maximizer\include\maximizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\build\CMakeFiles\947e464453b84128813358bc4084ca40\qrc_res_file.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Programming\Development\Projs\uniquness_maximizer\res_file.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\build\resources\icon.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9FA640E5-87A8-388C-8564-920EB9002FFE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B97A20D0-F67B-3693-8A01-EB58BEDDC7EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0057CA92-34F1-3BF7-9D93-F39028863F56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

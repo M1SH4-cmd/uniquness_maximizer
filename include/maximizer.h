@@ -7,7 +7,7 @@
 #include <QDir>
 #include <fstream>
 
-class Maximizer {
+class Maximizer { // "Это класс оркестратор
 
 public:
     Maximizer(std::string path);

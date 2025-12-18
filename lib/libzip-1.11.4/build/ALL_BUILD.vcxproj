@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5A3598E2-F325-31D0-BB9B-D8B1DD7DED6E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4 -BC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build --check-stamp-file C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGnuTLS.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeCCompiler.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeRCCompiler.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeSystem.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\Dist.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\FindMbedTLS.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\FindNettle.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\config.h.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\libzip-config.cmake.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\libzip.pc.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\zipconf.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4 -BC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build --check-stamp-file C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGnuTLS.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeCCompiler.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeRCCompiler.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeSystem.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\Dist.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\FindMbedTLS.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\FindNettle.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\config.h.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\libzip-config.cmake.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\libzip.pc.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\zipconf.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4 -BC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build --check-stamp-file C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGnuTLS.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeCCompiler.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeRCCompiler.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeSystem.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\Dist.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\FindMbedTLS.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\FindNettle.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\config.h.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\libzip-config.cmake.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\libzip.pc.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\zipconf.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4 -BC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build --check-stamp-file C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGnuTLS.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeCCompiler.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeRCCompiler.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\3.30.6\CMakeSystem.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\Dist.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\FindMbedTLS.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\cmake\FindNettle.cmake;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\config.h.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\libzip-config.cmake.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\libzip.pc.in;C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\zipconf.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\ZERO_CHECK.vcxproj">
+      <Project>{C431A2CC-4D1A-3968-8497-2935A3F73D15}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\examples\add-compressed-data.vcxproj">
+      <Project>{699B5931-6311-36B6-8A93-2105633AED3B}</Project>
+      <Name>add-compressed-data</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\examples\autoclose-archive.vcxproj">
+      <Project>{9327D146-BBA1-34F5-A606-C3851D3FED4D}</Project>
+      <Name>autoclose-archive</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\examples\in-memory.vcxproj">
+      <Project>{48E66866-83B8-30AB-B2C0-F2ED63CB4957}</Project>
+      <Name>in-memory</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\man\man.vcxproj">
+      <Project>{26B8E9C6-FEA4-39FE-888F-E760DF63CFF9}</Project>
+      <Name>man</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\lib\zip.vcxproj">
+      <Project>{C7839E0B-D06A-3D0D-9345-7DE0B0E0A43D}</Project>
+      <Name>zip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\ossfuzz\zip_read_file_fuzzer.vcxproj">
+      <Project>{1F9B96AE-36D3-364B-ACDF-8F31B3D67214}</Project>
+      <Name>zip_read_file_fuzzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\ossfuzz\zip_read_fuzzer.vcxproj">
+      <Project>{AFA868B2-EAA1-3EF4-A9D8-15E50F4AD124}</Project>
+      <Name>zip_read_fuzzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\ossfuzz\zip_write_encrypt_aes256_file_fuzzer.vcxproj">
+      <Project>{4B936CAB-B5AE-3AE0-8D32-78C7399360EB}</Project>
+      <Name>zip_write_encrypt_aes256_file_fuzzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\ossfuzz\zip_write_encrypt_pkware_file_fuzzer.vcxproj">
+      <Project>{A7D7EA18-B1FF-3242-83A6-B886C05CDF50}</Project>
+      <Name>zip_write_encrypt_pkware_file_fuzzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\zipcmp.vcxproj">
+      <Project>{E51660F0-AA60-34A0-98BD-490170D14629}</Project>
+      <Name>zipcmp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\zipmerge.vcxproj">
+      <Project>{E39A1FC3-D9BD-3F0D-9054-0ED12345AE26}</Project>
+      <Name>zipmerge</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\ziptool.vcxproj">
+      <Project>{41C5FD9C-F44E-3EA2-A902-BFCC4AB0A27A}</Project>
+      <Name>ziptool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

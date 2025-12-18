@@ -366,6 +366,12 @@
 			"MU",
 			"6YEA5652QU/moc_maximizer.cpp",
 			null
+		],
+		[
+			"C:/Programming/Development/Projs/uniquness_maximizer/lib/pugixml/pugixml.hpp",
+			"MU",
+			"B5SRS2EQC4/moc_pugixml.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -393,6 +399,9 @@
 	"MOC_INCLUDES" : 
 	[
 		"C:/Programming/Development/Projs/uniquness_maximizer/include",
+		"C:/Programming/Development/Projs/uniquness_maximizer/lib/pugixml",
+		"C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip/include",
+		"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib/include",
 		"C:/Qt/6.9.3/msvc2022_64/include/QtCore",
 		"C:/Qt/6.9.3/msvc2022_64/include",
 		"C:/Qt/6.9.3/msvc2022_64/mkspecs/win32-msvc",
@@ -424,6 +433,11 @@
 	"SETTINGS_FILE" : "C:/Programming/Development/Projs/uniquness_maximizer/build/Desktop_Qt_6_8_3_MSVC2022_64bit-Debug/CMakeFiles/uniquness_maximizer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Programming/Development/Projs/uniquness_maximizer/lib/pugixml/pugixml.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Programming/Development/Projs/uniquness_maximizer/src/main.cpp",
 			"MU",

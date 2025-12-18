@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\ZIP_SOURCE_GET_ARGS.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\libzip.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_add.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_add_dir.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_close.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_compression_method_supported.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_delete.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_dir_add.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_discard.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_encryption_method_supported.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_clear.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_code_system.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_code_zip.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_fini.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_get.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_get_sys_type.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_init.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_set.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_set_from_source.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_strerror.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_system_type.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_to_data.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_error_to_str.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_errors.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_fclose.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_fdopen.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_add.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_attributes_init.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_extra_field_delete.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_extra_field_get.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_extra_field_set.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_extra_fields_count.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_get_comment.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_get_error.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_get_external_attributes.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_rename.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_set_comment.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_set_encryption.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_set_external_attributes.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_set_mtime.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_file_strerror.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_fopen.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_fopen_encrypted.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_fread.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_fseek.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_ftell.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_get_archive_comment.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_get_archive_flag.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_get_error.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_get_file_comment.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_get_name.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_get_num_entries.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_get_num_files.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_libzip_version.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_name_locate.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_open.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_register_cancel_callback_with_state.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_register_progress_callback.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_register_progress_callback_with_state.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_rename.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_set_archive_comment.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_set_archive_flag.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_set_default_password.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_set_file_comment.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_set_file_compression.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_begin_write.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_buffer.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_buffer_fragment.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_close.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_commit_write.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_error.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_file.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_filep.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_free.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_function.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_is_deleted.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_is_seekable.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_keep.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_layered.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_make_command_bitmap.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_open.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_read.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_rollback_write.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_seek.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_seek_compute_offset.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_seek_write.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_stat.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_tell.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_tell_write.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_win32a.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_win32handle.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_win32w.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_window_create.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_write.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_zip.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_source_zip_file.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_stat.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_stat_init.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_unchange.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_unchange_all.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zip_unchange_archive.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zipcmp.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\zipmerge.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a93921b53de0fd71d7d26e596b6b3119\ziptool.man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\CMakeFiles\a929c7e034e8848838e06c7ea26f2a5e\update-man.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\man\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\man\CMakeFiles\update-man" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6052F507-2FC4-3BEA-92BD-12121CA2F0E0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

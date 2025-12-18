@@ -1,8 +1,11 @@
 #include "mainwindow.h"
+#include "maximizer.h"
 
 MainWindow::MainWindow(QWidget *parent, std::string path)
     : QMainWindow(parent)
 {
+
+    Maximizer max(path);
 
     QWidget *centralWidget = new QWidget;
     QWidget *buffer = new QWidget;

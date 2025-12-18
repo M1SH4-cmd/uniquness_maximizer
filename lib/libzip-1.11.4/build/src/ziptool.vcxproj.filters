@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\src\ziptool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\src\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{61096DC0-03E6-386E-8C8D-C992A3C76354}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

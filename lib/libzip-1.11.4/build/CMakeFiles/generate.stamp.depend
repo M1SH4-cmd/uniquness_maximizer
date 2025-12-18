@@ -1,0 +1,54 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.30/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindGnuTLS.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindOpenSSL.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/CMakeLists.txt
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/CMakeFiles/3.30.6/CMakeCCompiler.cmake
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/CMakeFiles/3.30.6/CMakeRCCompiler.cmake
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/CMakeFiles/3.30.6/CMakeSystem.cmake
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/cmake/Dist.cmake
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/cmake/FindMbedTLS.cmake
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/cmake/FindNettle.cmake
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/config.h.in
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/libzip-config.cmake.in
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/libzip.pc.in
+C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/zipconf.h.in

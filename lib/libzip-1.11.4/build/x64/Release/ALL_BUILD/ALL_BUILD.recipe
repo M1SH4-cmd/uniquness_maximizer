@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\lib\Release\zip.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\examples\Release\add-compressed-data.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\examples\Release\autoclose-archive.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\examples\Release\in-memory.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\man\x64\Release\man</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\ossfuzz\Release\zip_read_file_fuzzer.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\ossfuzz\Release\zip_read_fuzzer.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\ossfuzz\Release\zip_write_encrypt_aes256_file_fuzzer.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\ossfuzz\Release\zip_write_encrypt_pkware_file_fuzzer.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\Release\zipcmp.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\Release\zipmerge.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\Release\ziptool.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -1,0 +1,8 @@
+C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/zlib.dir
+C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/zlibstatic.dir
+C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/example.dir
+C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/minigzip.dir
+C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/RUN_TESTS.dir
+C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/INSTALL.dir
+C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/ALL_BUILD.dir
+C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/ZERO_CHECK.dir

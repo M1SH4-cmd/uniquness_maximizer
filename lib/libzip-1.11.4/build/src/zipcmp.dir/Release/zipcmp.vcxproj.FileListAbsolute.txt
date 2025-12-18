@@ -1,0 +1,4 @@
+C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\Release\zip.dll
+C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\Release\bz2.dll
+C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\Release\zlib1.dll
+C:\Programming\Development\Projs\uniquness_maximizer\lib\libzip-1.11.4\build\src\zipcmp.dir\Release\zipcmp.vcxproj.Up2Date

@@ -1,0 +1,2394 @@
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_GET_ARGS.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/ZIP_SOURCE_GET_ARGS.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/ZIP_SOURCE_GET_ARGS.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/ZIP_SOURCE_GET_ARGS.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/ZIP_SOURCE_GET_ARGS.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_GET_ARGS.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/ZIP_SOURCE_GET_ARGS.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/ZIP_SOURCE_GET_ARGS.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\LIBZIP.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/libzip.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/libzip.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/libzip.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/libzip.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\LIBZIP.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/libzip.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/libzip.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP.5.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip.5
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ADD.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_add.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_add.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_add.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_add.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ADD.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_add.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_add.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ADD_DIR.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_add_dir.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_add_dir.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_add_dir.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_add_dir.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ADD_DIR.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_add_dir.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_add_dir.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_CLOSE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_close.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_close.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_close.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_close.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_CLOSE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_close.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_close.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_COMPRESSION_METHOD_SUPPORTED.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_compression_method_supported.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_compression_method_supported.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_compression_method_supported.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_compression_method_supported.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_COMPRESSION_METHOD_SUPPORTED.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_compression_method_supported.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_compression_method_supported.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_DELETE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_delete.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_delete.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_delete.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_delete.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_DELETE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_delete.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_delete.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_DIR_ADD.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_dir_add.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_dir_add.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_dir_add.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_dir_add.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_DIR_ADD.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_dir_add.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_dir_add.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_DISCARD.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_discard.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_discard.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_discard.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_discard.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_DISCARD.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_discard.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_discard.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ENCRYPTION_METHOD_SUPPORTED.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_encryption_method_supported.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_encryption_method_supported.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_encryption_method_supported.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_encryption_method_supported.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ENCRYPTION_METHOD_SUPPORTED.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_encryption_method_supported.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_encryption_method_supported.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR.5.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error.5
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_CLEAR.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_clear.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_clear.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_clear.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_clear.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_CLEAR.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_clear.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_clear.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_CODE_SYSTEM.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_code_system.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_code_system.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_code_system.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_code_system.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_CODE_SYSTEM.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_code_system.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_code_system.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_CODE_ZIP.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_code_zip.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_code_zip.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_code_zip.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_code_zip.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_CODE_ZIP.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_code_zip.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_code_zip.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_FINI.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_fini.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_fini.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_fini.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_fini.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_FINI.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_fini.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_fini.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_GET.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_get.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_get.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_get.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_get.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_GET.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_get.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_get.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_GET_SYS_TYPE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_get_sys_type.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_get_sys_type.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_get_sys_type.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_get_sys_type.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_GET_SYS_TYPE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_get_sys_type.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_get_sys_type.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_INIT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_init.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_init.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_init.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_init.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_INIT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_init.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_init.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_SET.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_set.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_set.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_set.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_set.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_SET.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_set.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_set.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_SET_FROM_SOURCE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_set_from_source.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_set_from_source.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_set_from_source.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_set_from_source.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_SET_FROM_SOURCE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_set_from_source.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_set_from_source.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_STRERROR.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_strerror.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_strerror.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_strerror.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_strerror.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_STRERROR.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_strerror.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_strerror.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_SYSTEM_TYPE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_system_type.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_system_type.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_system_type.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_system_type.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_SYSTEM_TYPE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_system_type.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_system_type.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_TO_DATA.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_to_data.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_to_data.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_to_data.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_to_data.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_TO_DATA.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_to_data.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_to_data.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_TO_STR.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_to_str.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_to_str.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_to_str.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_to_str.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERROR_TO_STR.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_error_to_str.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_error_to_str.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERRORS.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_errors.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_errors.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_errors.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_errors.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_ERRORS.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_errors.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_errors.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FCLOSE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fclose.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fclose.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fclose.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fclose.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FCLOSE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fclose.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fclose.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FDOPEN.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fdopen.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fdopen.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fdopen.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fdopen.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FDOPEN.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fdopen.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fdopen.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE.5.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file.5
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_ADD.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_add.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_add.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_add.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_add.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_ADD.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_add.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_add.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_ATTRIBUTES_INIT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_attributes_init.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_attributes_init.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_attributes_init.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_attributes_init.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_ATTRIBUTES_INIT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_attributes_init.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_attributes_init.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_EXTRA_FIELD_DELETE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_field_delete.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_field_delete.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_field_delete.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_field_delete.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_EXTRA_FIELD_DELETE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_field_delete.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_field_delete.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_EXTRA_FIELD_GET.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_field_get.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_field_get.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_field_get.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_field_get.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_EXTRA_FIELD_GET.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_field_get.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_field_get.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_EXTRA_FIELD_SET.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_field_set.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_field_set.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_field_set.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_field_set.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_EXTRA_FIELD_SET.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_field_set.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_field_set.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_EXTRA_FIELDS_COUNT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_fields_count.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_fields_count.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_fields_count.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_fields_count.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_EXTRA_FIELDS_COUNT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_extra_fields_count.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_extra_fields_count.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_GET_COMMENT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_get_comment.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_get_comment.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_get_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_get_comment.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_GET_COMMENT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_get_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_get_comment.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_GET_ERROR.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_get_error.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_get_error.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_get_error.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_get_error.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_GET_ERROR.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_get_error.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_get_error.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_GET_EXTERNAL_ATTRIBUTES.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_get_external_attributes.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_get_external_attributes.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_get_external_attributes.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_get_external_attributes.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_GET_EXTERNAL_ATTRIBUTES.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_get_external_attributes.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_get_external_attributes.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_RENAME.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_rename.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_rename.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_rename.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_rename.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_RENAME.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_rename.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_rename.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_SET_COMMENT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_comment.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_comment.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_comment.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_SET_COMMENT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_comment.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_SET_ENCRYPTION.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_encryption.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_encryption.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_encryption.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_encryption.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_SET_ENCRYPTION.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_encryption.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_encryption.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_SET_EXTERNAL_ATTRIBUTES.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_external_attributes.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_external_attributes.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_external_attributes.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_external_attributes.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_SET_EXTERNAL_ATTRIBUTES.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_external_attributes.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_external_attributes.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_SET_MTIME.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_mtime.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_mtime.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_mtime.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_mtime.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_SET_MTIME.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_set_mtime.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_set_mtime.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_STRERROR.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_strerror.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_strerror.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_strerror.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_strerror.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FILE_STRERROR.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_file_strerror.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_file_strerror.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FOPEN.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fopen.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fopen.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fopen.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fopen.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FOPEN.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fopen.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fopen.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FOPEN_ENCRYPTED.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fopen_encrypted.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fopen_encrypted.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fopen_encrypted.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fopen_encrypted.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FOPEN_ENCRYPTED.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fopen_encrypted.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fopen_encrypted.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FREAD.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fread.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fread.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fread.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fread.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FREAD.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fread.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fread.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FSEEK.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fseek.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fseek.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fseek.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fseek.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FSEEK.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_fseek.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_fseek.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FTELL.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_ftell.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_ftell.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_ftell.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_ftell.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_FTELL.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_ftell.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_ftell.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_ARCHIVE_COMMENT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_archive_comment.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_archive_comment.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_archive_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_archive_comment.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_ARCHIVE_COMMENT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_archive_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_archive_comment.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_ARCHIVE_FLAG.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_archive_flag.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_archive_flag.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_archive_flag.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_archive_flag.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_ARCHIVE_FLAG.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_archive_flag.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_archive_flag.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_ERROR.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_error.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_error.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_error.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_error.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_ERROR.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_error.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_error.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_FILE_COMMENT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_file_comment.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_file_comment.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_file_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_file_comment.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_FILE_COMMENT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_file_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_file_comment.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_NAME.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_name.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_name.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_name.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_name.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_NAME.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_name.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_name.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_NUM_ENTRIES.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_num_entries.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_num_entries.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_num_entries.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_num_entries.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_NUM_ENTRIES.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_num_entries.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_num_entries.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_NUM_FILES.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_num_files.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_num_files.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_num_files.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_num_files.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_GET_NUM_FILES.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_get_num_files.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_get_num_files.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_LIBZIP_VERSION.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_libzip_version.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_libzip_version.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_libzip_version.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_libzip_version.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_LIBZIP_VERSION.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_libzip_version.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_libzip_version.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_NAME_LOCATE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_name_locate.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_name_locate.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_name_locate.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_name_locate.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_NAME_LOCATE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_name_locate.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_name_locate.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_OPEN.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_open.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_open.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_open.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_open.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_OPEN.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_open.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_open.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_REGISTER_CANCEL_CALLBACK_WITH_STATE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_register_cancel_callback_with_state.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_register_cancel_callback_with_state.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_register_cancel_callback_with_state.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_register_cancel_callback_with_state.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_REGISTER_CANCEL_CALLBACK_WITH_STATE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_register_cancel_callback_with_state.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_register_cancel_callback_with_state.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_REGISTER_PROGRESS_CALLBACK.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_register_progress_callback.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_register_progress_callback.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_register_progress_callback.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_register_progress_callback.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_REGISTER_PROGRESS_CALLBACK.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_register_progress_callback.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_register_progress_callback.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_REGISTER_PROGRESS_CALLBACK_WITH_STATE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_register_progress_callback_with_state.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_register_progress_callback_with_state.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_register_progress_callback_with_state.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_register_progress_callback_with_state.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_REGISTER_PROGRESS_CALLBACK_WITH_STATE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_register_progress_callback_with_state.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_register_progress_callback_with_state.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_RENAME.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_rename.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_rename.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_rename.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_rename.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_RENAME.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_rename.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_rename.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_ARCHIVE_COMMENT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_archive_comment.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_archive_comment.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_archive_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_archive_comment.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_ARCHIVE_COMMENT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_archive_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_archive_comment.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_ARCHIVE_FLAG.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_archive_flag.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_archive_flag.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_archive_flag.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_archive_flag.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_ARCHIVE_FLAG.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_archive_flag.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_archive_flag.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_DEFAULT_PASSWORD.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_default_password.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_default_password.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_default_password.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_default_password.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_DEFAULT_PASSWORD.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_default_password.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_default_password.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_FILE_COMMENT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_file_comment.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_file_comment.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_file_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_file_comment.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_FILE_COMMENT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_file_comment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_file_comment.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_FILE_COMPRESSION.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_file_compression.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_file_compression.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_file_compression.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_file_compression.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SET_FILE_COMPRESSION.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_set_file_compression.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_set_file_compression.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE.5.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source.5
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_BEGIN_WRITE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_begin_write.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_begin_write.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_begin_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_begin_write.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_BEGIN_WRITE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_begin_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_begin_write.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_BUFFER.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_buffer.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_buffer.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_buffer.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_buffer.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_BUFFER.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_buffer.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_buffer.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_BUFFER_FRAGMENT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_buffer_fragment.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_buffer_fragment.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_buffer_fragment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_buffer_fragment.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_BUFFER_FRAGMENT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_buffer_fragment.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_buffer_fragment.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_CLOSE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_close.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_close.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_close.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_close.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_CLOSE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_close.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_close.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_COMMIT_WRITE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_commit_write.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_commit_write.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_commit_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_commit_write.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_COMMIT_WRITE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_commit_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_commit_write.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_ERROR.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_error.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_error.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_error.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_error.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_ERROR.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_error.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_error.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_FILE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_file.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_file.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_file.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_file.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_FILE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_file.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_file.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_FILEP.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_filep.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_filep.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_filep.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_filep.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_FILEP.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_filep.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_filep.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_FREE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_free.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_free.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_free.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_free.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_FREE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_free.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_free.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_FUNCTION.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_function.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_function.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_function.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_function.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_FUNCTION.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_function.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_function.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_IS_DELETED.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_is_deleted.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_is_deleted.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_is_deleted.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_is_deleted.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_IS_DELETED.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_is_deleted.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_is_deleted.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_IS_SEEKABLE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_is_seekable.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_is_seekable.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_is_seekable.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_is_seekable.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_IS_SEEKABLE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_is_seekable.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_is_seekable.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_KEEP.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_keep.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_keep.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_keep.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_keep.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_KEEP.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_keep.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_keep.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_LAYERED.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_layered.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_layered.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_layered.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_layered.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_LAYERED.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_layered.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_layered.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_MAKE_COMMAND_BITMAP.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_make_command_bitmap.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_make_command_bitmap.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_make_command_bitmap.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_make_command_bitmap.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_MAKE_COMMAND_BITMAP.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_make_command_bitmap.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_make_command_bitmap.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_OPEN.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_open.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_open.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_open.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_open.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_OPEN.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_open.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_open.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_READ.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_read.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_read.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_read.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_read.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_READ.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_read.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_read.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_ROLLBACK_WRITE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_rollback_write.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_rollback_write.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_rollback_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_rollback_write.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_ROLLBACK_WRITE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_rollback_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_rollback_write.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_SEEK.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_seek.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_seek.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_seek.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_seek.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_SEEK.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_seek.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_seek.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_SEEK_COMPUTE_OFFSET.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_seek_compute_offset.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_seek_compute_offset.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_seek_compute_offset.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_seek_compute_offset.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_SEEK_COMPUTE_OFFSET.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_seek_compute_offset.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_seek_compute_offset.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_SEEK_WRITE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_seek_write.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_seek_write.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_seek_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_seek_write.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_SEEK_WRITE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_seek_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_seek_write.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_STAT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_stat.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_stat.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_stat.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_stat.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_STAT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_stat.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_stat.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_TELL.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_tell.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_tell.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_tell.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_tell.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_TELL.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_tell.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_tell.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_TELL_WRITE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_tell_write.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_tell_write.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_tell_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_tell_write.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_TELL_WRITE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_tell_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_tell_write.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WIN32A.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_win32a.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_win32a.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_win32a.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_win32a.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WIN32A.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_win32a.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_win32a.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WIN32HANDLE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_win32handle.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_win32handle.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_win32handle.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_win32handle.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WIN32HANDLE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_win32handle.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_win32handle.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WIN32W.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_win32w.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_win32w.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_win32w.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_win32w.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WIN32W.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_win32w.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_win32w.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WINDOW_CREATE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_window_create.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_window_create.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_window_create.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_window_create.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WINDOW_CREATE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_window_create.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_window_create.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WRITE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_write.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_write.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_write.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_WRITE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_write.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_write.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_ZIP.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_zip.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_zip.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_zip.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_zip.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_ZIP.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_zip.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_zip.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_ZIP_FILE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_zip_file.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_zip_file.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_zip_file.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_zip_file.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_SOURCE_ZIP_FILE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_source_zip_file.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_source_zip_file.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_STAT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_stat.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_stat.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_stat.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_stat.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_STAT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_stat.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_stat.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_STAT_INIT.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_stat_init.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_stat_init.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_stat_init.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_stat_init.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_STAT_INIT.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_stat_init.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_stat_init.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_UNCHANGE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_unchange.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_unchange.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_unchange.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_unchange.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_UNCHANGE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_unchange.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_unchange.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_UNCHANGE_ALL.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_unchange_all.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_unchange_all.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_unchange_all.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_unchange_all.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_UNCHANGE_ALL.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_unchange_all.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_unchange_all.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_UNCHANGE_ARCHIVE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_unchange_archive.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_unchange_archive.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_unchange_archive.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_unchange_archive.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIP_UNCHANGE_ARCHIVE.3.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zip_unchange_archive.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zip_unchange_archive.3
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIPCMP.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zipcmp.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zipcmp.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zipcmp.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zipcmp.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIPCMP.1.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zipcmp.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zipcmp.1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIPMERGE.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zipmerge.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zipmerge.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zipmerge.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zipmerge.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIPMERGE.1.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/zipmerge.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/zipmerge.1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIPTOOL.HTML.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DIN=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/ziptool.mdoc -DOUT=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/ziptool.html -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/update-html.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/ziptool.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/ziptool.html
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A93921B53DE0FD71D7D26E596B6B3119\ZIPTOOL.1.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/man/ziptool.html C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/ziptool.1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\A929C7E034E8848838E06C7EA26F2A5E\MAN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\MAN\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4 -BC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build --check-stamp-file C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/man/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

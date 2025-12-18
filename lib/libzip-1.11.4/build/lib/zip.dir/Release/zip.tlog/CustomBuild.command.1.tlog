@@ -1,0 +1,20 @@
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\BUILD\CMAKEFILES\F06389C644BFD88DF450EB193A7DC6CF\ZIP_ERR_STR.C.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DPROJECT_SOURCE_DIR=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4 -DCMAKE_CURRENT_BINARY_DIR=C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/lib -P C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/cmake/GenerateZipErrorStrings.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\PROGRAMMING\DEVELOPMENT\PROJS\UNIQUNESS_MAXIMIZER\LIB\LIBZIP-1.11.4\LIB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4 -BC:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build --check-stamp-file C:/Programming/Development/Projs/uniquness_maximizer/lib/libzip-1.11.4/build/lib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

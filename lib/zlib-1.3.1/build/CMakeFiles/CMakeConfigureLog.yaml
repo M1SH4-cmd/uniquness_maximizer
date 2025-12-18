@@ -1,0 +1,520 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.19+0d9f5a35a ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 19.12.2025 0:47:19.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\3.30.6\\CompilerIdC\\CompilerIdC.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\3.30.6\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\3.30.6\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        ╨д╨░╨╣╨╗ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\3.30.6\\CompilerIdC\\CompilerIdC.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      
+      ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 0
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.37
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/3.30.6/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-d9qygp"
+      binary: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-d9qygp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-d9qygp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8a183.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.19+0d9f5a35a ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 19.12.2025 0:47:20.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9qygp\\cmTC_8a183.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_8a183.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9qygp\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_8a183.dir\\Debug\\cmTC_8a183.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_8a183.dir\\Debug\\cmTC_8a183.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_8a183.dir\\Debug\\cmTC_8a183.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8a183.dir\\Debug\\\\" /Fd"cmTC_8a183.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.40.33820 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8a183.dir\\Debug\\\\" /Fd"cmTC_8a183.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9qygp\\Debug\\cmTC_8a183.exe" /INCREMENTAL /ILK:"cmTC_8a183.dir\\Debug\\cmTC_8a183.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-d9qygp/Debug/cmTC_8a183.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-d9qygp/Debug/cmTC_8a183.lib" /MACHINE:X64  /machine:x64 cmTC_8a183.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_8a183.vcxproj -> C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9qygp\\Debug\\cmTC_8a183.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9qygp\\Debug\\cmTC_8a183.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_8a183.dir\\Debug\\cmTC_8a183.tlog\\cmTC_8a183.write.1u.tlog" "cmTC_8a183.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_8a183.dir\\Debug\\cmTC_8a183.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_8a183.dir\\Debug\\cmTC_8a183.tlog\\cmTC_8a183.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9qygp\\cmTC_8a183.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.34
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.40.33820.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:22 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1vhoi8"
+      binary: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1vhoi8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1vhoi8'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_012a8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.19+0d9f5a35a ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 19.12.2025 0:47:22.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1vhoi8\\cmTC_012a8.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_012a8.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1vhoi8\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_012a8.dir\\Debug\\cmTC_012a8.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_012a8.dir\\Debug\\cmTC_012a8.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_012a8.dir\\Debug\\cmTC_012a8.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_012a8.dir\\Debug\\\\" /Fd"cmTC_012a8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1vhoi8\\CheckIncludeFile.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.40.33820 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_012a8.dir\\Debug\\\\" /Fd"cmTC_012a8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1vhoi8\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1vhoi8\\Debug\\cmTC_012a8.exe" /INCREMENTAL /ILK:"cmTC_012a8.dir\\Debug\\cmTC_012a8.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1vhoi8/Debug/cmTC_012a8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1vhoi8/Debug/cmTC_012a8.lib" /MACHINE:X64  /machine:x64 cmTC_012a8.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_012a8.vcxproj -> C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1vhoi8\\Debug\\cmTC_012a8.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1vhoi8\\Debug\\cmTC_012a8.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_012a8.dir\\Debug\\cmTC_012a8.tlog\\cmTC_012a8.write.1u.tlog" "cmTC_012a8.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_012a8.dir\\Debug\\cmTC_012a8.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_012a8.dir\\Debug\\cmTC_012a8.tlog\\cmTC_012a8.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1vhoi8\\cmTC_012a8.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.56
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:23 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-atnj91"
+      binary: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-atnj91"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-atnj91'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5a829.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.19+0d9f5a35a ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 19.12.2025 0:47:24.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atnj91\\cmTC_5a829.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_5a829.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atnj91\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_5a829.dir\\Debug\\cmTC_5a829.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_5a829.dir\\Debug\\cmTC_5a829.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_5a829.dir\\Debug\\cmTC_5a829.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5a829.dir\\Debug\\\\" /Fd"cmTC_5a829.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atnj91\\CheckIncludeFile.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.40.33820 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5a829.dir\\Debug\\\\" /Fd"cmTC_5a829.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atnj91\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atnj91\\Debug\\cmTC_5a829.exe" /INCREMENTAL /ILK:"cmTC_5a829.dir\\Debug\\cmTC_5a829.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-atnj91/Debug/cmTC_5a829.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-atnj91/Debug/cmTC_5a829.lib" /MACHINE:X64  /machine:x64 cmTC_5a829.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_5a829.vcxproj -> C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atnj91\\Debug\\cmTC_5a829.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atnj91\\Debug\\cmTC_5a829.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_5a829.dir\\Debug\\cmTC_5a829.tlog\\cmTC_5a829.write.1u.tlog" "cmTC_5a829.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_5a829.dir\\Debug\\cmTC_5a829.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_5a829.dir\\Debug\\cmTC_5a829.tlog\\cmTC_5a829.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atnj91\\cmTC_5a829.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.30
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:24 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-2q6sra"
+      binary: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-2q6sra"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-2q6sra'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b5c93.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.19+0d9f5a35a ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 19.12.2025 0:47:25.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q6sra\\cmTC_b5c93.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_b5c93.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q6sra\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_b5c93.dir\\Debug\\cmTC_b5c93.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_b5c93.dir\\Debug\\cmTC_b5c93.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_b5c93.dir\\Debug\\cmTC_b5c93.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5c93.dir\\Debug\\\\" /Fd"cmTC_b5c93.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q6sra\\CheckIncludeFile.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.40.33820 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5c93.dir\\Debug\\\\" /Fd"cmTC_b5c93.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q6sra\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q6sra\\Debug\\cmTC_b5c93.exe" /INCREMENTAL /ILK:"cmTC_b5c93.dir\\Debug\\cmTC_b5c93.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-2q6sra/Debug/cmTC_b5c93.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-2q6sra/Debug/cmTC_b5c93.lib" /MACHINE:X64  /machine:x64 cmTC_b5c93.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_b5c93.vcxproj -> C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q6sra\\Debug\\cmTC_b5c93.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q6sra\\Debug\\cmTC_b5c93.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_b5c93.dir\\Debug\\cmTC_b5c93.tlog\\cmTC_b5c93.write.1u.tlog" "cmTC_b5c93.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          ╨д╨░╨╣╨╗ "cmTC_b5c93.dir\\Debug\\cmTC_b5c93.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_b5c93.dir\\Debug\\cmTC_b5c93.tlog\\cmTC_b5c93.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q6sra\\cmTC_b5c93.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        
+        ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 0
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:01.33
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "CMakeLists.txt:42 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-vepevu"
+      binary: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-vepevu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-vepevu'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a8e5d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.19+0d9f5a35a ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 19.12.2025 0:47:26.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_a8e5d.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_a8e5d.dir\\Debug\\cmTC_a8e5d.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_a8e5d.dir\\Debug\\cmTC_a8e5d.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_a8e5d.dir\\Debug\\cmTC_a8e5d.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a8e5d.dir\\Debug\\\\" /Fd"cmTC_a8e5d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.40.33820 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a8e5d.dir\\Debug\\\\" /Fd"cmTC_a8e5d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c"
+          OFF64_T.c
+        C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(29,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+        C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(30,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+        C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(31,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+        C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(32,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+        C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(33,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+        
+        ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+        
+        "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+        (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ClCompile) -> 
+          C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(29,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+          C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(30,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+          C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(31,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+          C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(32,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+          C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\OFF64_T.c(33,12): error C2065: off64_t: ╨╜╨╡╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╜╤Л╨╣ ╨╕╨┤╨╡╨╜╤В╨╕╤Д╨╕╨║╨░╤В╨╛╤А [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vepevu\\cmTC_a8e5d.vcxproj]
+        
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 5
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.36
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:51 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1s9m01"
+      binary: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1s9m01"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1s9m01'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d63b8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.19+0d9f5a35a ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 19.12.2025 0:47:27.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\cmTC_d63b8.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_d63b8.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_d63b8.dir\\Debug\\cmTC_d63b8.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_d63b8.dir\\Debug\\cmTC_d63b8.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_d63b8.dir\\Debug\\cmTC_d63b8.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d63b8.dir\\Debug\\\\" /Fd"cmTC_d63b8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\CheckFunctionExists.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.40.33820 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d63b8.dir\\Debug\\\\" /Fd"cmTC_d63b8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\Debug\\cmTC_d63b8.exe" /INCREMENTAL /ILK:"cmTC_d63b8.dir\\Debug\\cmTC_d63b8.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1s9m01/Debug/cmTC_d63b8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-1s9m01/Debug/cmTC_d63b8.lib" /MACHINE:X64  /machine:x64 cmTC_d63b8.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: ╤Б╤Б╤Л╨╗╨║╨░ ╨╜╨░ ╨╜╨╡╤А╨░╨╖╤А╨╡╤И╨╡╨╜╨╜╤Л╨╣ ╨▓╨╜╨╡╤И╨╜╨╕╨╣ ╤Б╨╕╨╝╨▓╨╛╨╗ fseeko ╨▓ ╤Д╤Г╨╜╨║╤Ж╨╕╨╕ main. [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\cmTC_d63b8.vcxproj]
+        C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\Debug\\cmTC_d63b8.exe : fatal error LNK1120: ╨╜╨╡╤А╨░╨╖╤А╨╡╤И╨╡╨╜╨╜╤Л╤Е ╨▓╨╜╨╡╤И╨╜╨╕╤Е ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓: 1 [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\cmTC_d63b8.vcxproj]
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\cmTC_d63b8.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+        
+        ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+        
+        "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\cmTC_d63b8.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+        (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В Link) -> 
+          CheckFunctionExists.obj : error LNK2019: ╤Б╤Б╤Л╨╗╨║╨░ ╨╜╨░ ╨╜╨╡╤А╨░╨╖╤А╨╡╤И╨╡╨╜╨╜╤Л╨╣ ╨▓╨╜╨╡╤И╨╜╨╕╨╣ ╤Б╨╕╨╝╨▓╨╛╨╗ fseeko ╨▓ ╤Д╤Г╨╜╨║╤Ж╨╕╨╕ main. [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\cmTC_d63b8.vcxproj]
+          C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\Debug\\cmTC_d63b8.exe : fatal error LNK1120: ╨╜╨╡╤А╨░╨╖╤А╨╡╤И╨╡╨╜╨╜╤Л╤Е ╨▓╨╜╨╡╤И╨╜╨╕╤Е ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓: 1 [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1s9m01\\cmTC_d63b8.vcxproj]
+        
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 2
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.50
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:59 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-v5jbud"
+      binary: "C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-v5jbud"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programming/Development/Projs/uniquness_maximizer/lib/zlib-1.3.1/build/CMakeFiles/CMakeScratch/TryCompile-v5jbud'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_974ab.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        ╨Т╨╡╤А╤Б╨╕╤П MSBuild 17.13.19+0d9f5a35a ╨┤╨╗╤П .NET Framework
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 19.12.2025 0:47:28.
+        
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\cmTC_974ab.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        PrepareForBuild:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_974ab.dir\\Debug\\".
+          ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_974ab.dir\\Debug\\cmTC_974ab.tlog\\".
+        InitializeBuildStatus:
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_974ab.dir\\Debug\\cmTC_974ab.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_974ab.dir\\Debug\\cmTC_974ab.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_974ab.dir\\Debug\\\\" /Fd"cmTC_974ab.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\CheckIncludeFile.c"
+          ╨Ю╨┐╤В╨╕╨╝╨╕╨╖╨╕╤А╤Г╤О╤Й╨╕╨╣ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А Microsoft (R) C/C++ ╨▓╨╡╤А╤Б╨╕╨╕ 19.40.33820 ╨┤╨╗╤П x64
+          (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_974ab.dir\\Debug\\\\" /Fd"cmTC_974ab.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\CheckIncludeFile.c(1,10): error C1083: ╨Э╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ ╨▓╨║╨╗╤О╤З╨╡╨╜╨╕╨╡: unistd.h: No such file or directory, [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\cmTC_974ab.vcxproj]
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\cmTC_974ab.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+        
+        ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+        
+        "C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\cmTC_974ab.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+        (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ClCompile) -> 
+          C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\CheckIncludeFile.c(1,10): error C1083: ╨Э╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ ╨▓╨║╨╗╤О╤З╨╡╨╜╨╕╨╡: unistd.h: No such file or directory, [C:\\Programming\\Development\\Projs\\uniquness_maximizer\\lib\\zlib-1.3.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5jbud\\cmTC_974ab.vcxproj]
+        
+            ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+            ╨Ю╤И╨╕╨▒╨╛╨║: 1
+        
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.37
+        
+      exitCode: 1
+...
