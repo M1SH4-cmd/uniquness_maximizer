@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     a.setWindowIcon(QIcon(":/res/resources/icon.ico"));
     w.show();
 
-    std::string path = "C:/Main/test_word.docx";
+    std::string path = "C:\\Main\\test_word.docx";
     testZip(path);
 
     if (argc > 1) {

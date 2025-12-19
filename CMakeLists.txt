@@ -9,8 +9,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Gui Core)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Gui Core)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         #source code:
@@ -28,7 +28,7 @@ set(PROJECT_SOURCES
         #pugixml lib:
         lib/pugixml/pugixml.cpp
 
-        #libzip:
+        #external libs:
 
 )
 
@@ -72,8 +72,6 @@ endif()
 
 target_link_libraries(uniquness_maximizer PRIVATE
   Qt${QT_VERSION_MAJOR}::Widgets
-  Qt${QT_VERSION_MAJOR}::Gui
-  Qt${QT_VERSION_MAJOR}::Core
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/lib/zip.lib
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/lib/zlib.lib
 )
@@ -92,7 +90,6 @@ set_target_properties(uniquness_maximizer PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
-    WIN32_EXECUTABLE TRUE
 )
 
 include(GNUInstallDirs)
