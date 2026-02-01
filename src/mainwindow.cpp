@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+//#include "mainwindow.h"
 #include "maximizer.h"
 
 MainWindow::MainWindow(QWidget *parent, std::string path)

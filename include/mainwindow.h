@@ -17,7 +17,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr, std::string path = "");
+    //MainWindow(QWidget *parent = nullptr, std::string path = "");
     ~MainWindow();
 
 
