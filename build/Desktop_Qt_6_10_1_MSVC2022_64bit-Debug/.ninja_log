@@ -1,0 +1,23 @@
+# ninja log v6
+22	1175	7880372813154548	uniquness_maximizer_autogen/timestamp	3e06007fbc830ada
+22	1175	7880372813154548	uniquness_maximizer_autogen/mocs_compilation.cpp	3e06007fbc830ada
+21	135	7898510534800516	CMakeFiles/uniquness_maximizer.dir/resources/icon.rc.res	5d16a65f69784db0
+1297	5531	7880372814923253	CMakeFiles/uniquness_maximizer.dir/src/mainwindow.cpp.obj	e1329f442098d862
+22	1175	7880372813154548	C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/uniquness_maximizer_autogen/timestamp	3e06007fbc830ada
+22	1175	7880372813154548	C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/uniquness_maximizer_autogen/mocs_compilation.cpp	3e06007fbc830ada
+1180	1279	7880372814625622	uniquness_maximizer_autogen/EWIEGA46WW/qrc_res_file.cpp	9a4fd2d7c7370d4d
+1399	1485	7880372815939379	CMakeFiles/uniquness_maximizer.dir/uniquness_maximizer_autogen/EWIEGA46WW/qrc_res_file.cpp.obj	743f3425013a9381
+1302	3383	7880372814973284	CMakeFiles/uniquness_maximizer.dir/lib/pugixml/pugixml.cpp.obj	80e831abe2e48074
+1180	1279	7880372814625622	C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/uniquness_maximizer_autogen/EWIEGA46WW/qrc_res_file.cpp	9a4fd2d7c7370d4d
+1300	4925	7880372814953252	CMakeFiles/uniquness_maximizer.dir/src/maximizer.cpp.obj	ffc6762210b7d152
+1279	5462	7880372814736593	CMakeFiles/uniquness_maximizer.dir/uniquness_maximizer_autogen/mocs_compilation.cpp.obj	31e64fa196d1b4a9
+1282	5506	7880372814766587	CMakeFiles/uniquness_maximizer.dir/src/main.cpp.obj	ce9ee6dc05f07dbb
+136	420	7898510535958957	uniquness_maximizer.exe	15efdac001d7cbaa
+32	158	7915649742951265	CMakeFiles/uniquness_maximizer.dir/resources/icon.rc.res	5d16a65f69784db0
+159	550	7915649744227812	uniquness_maximizer.exe	15efdac001d7cbaa
+33	172	7916527946961053	uniquness_maximizer_autogen/timestamp	3e06007fbc830ada
+33	172	7916527946961053	uniquness_maximizer_autogen/mocs_compilation.cpp	3e06007fbc830ada
+33	172	7916527946961053	C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/uniquness_maximizer_autogen/timestamp	3e06007fbc830ada
+33	172	7916527946961053	C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/uniquness_maximizer_autogen/mocs_compilation.cpp	3e06007fbc830ada
+174	3680	7916527948365941	CMakeFiles/uniquness_maximizer.dir/src/main.cpp.obj	ce9ee6dc05f07dbb
+3680	3990	7916527983429626	uniquness_maximizer.exe	15efdac001d7cbaa

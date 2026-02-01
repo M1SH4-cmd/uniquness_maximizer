@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/uniquness_maximizer_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Projs/uniq_mxzr",
+	"CMAKE_SOURCE_DIR" : "C:/Projs/uniq_mxzr",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/uniquness_maximizer_autogen/include",
+	"INPUTS" : [ "C:/Projs/uniq_mxzr/resources/icon.ico" ],
+	"LOCK_FILE" : "C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/uniquness_maximizer_autogen.dir/AutoRcc_res_file_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "res_file" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_res_file.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.10.1/msvc2022_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/uniquness_maximizer_autogen.dir/AutoRcc_res_file_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Projs/uniq_mxzr/res_file.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

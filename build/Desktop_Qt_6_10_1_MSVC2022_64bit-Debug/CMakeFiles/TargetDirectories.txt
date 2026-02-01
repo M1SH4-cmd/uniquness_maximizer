@@ -1,0 +1,8 @@
+C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/uniquness_maximizer.dir
+C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/edit_cache.dir
+C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/list_install_components.dir
+C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/install.dir
+C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/install/local.dir
+C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/uniquness_maximizer_autogen_timestamp_deps.dir
+C:/Projs/uniq_mxzr/build/Desktop_Qt_6_10_1_MSVC2022_64bit-Debug/CMakeFiles/uniquness_maximizer_autogen.dir
