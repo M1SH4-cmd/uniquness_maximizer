@@ -2,54 +2,65 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QPushButton>
-#include <QFileDialog>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QLineEdit>
-#include <QTextEdit>
-#include <QLabel>
-#include <QDir>
-#include <QIcon>
+#include <QList>
+#include <string>
+
+class QLabel;
+class QPushButton;
+class QProgressBar;
+class QTextEdit;
+class QStackedWidget;
+class QFrame;
+class QComboBox;
+
+struct ApiKeyEntry {
+    QString id;
+    QString provider;
+    QString key;
+    bool selected = false;
+};
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    //MainWindow(QWidget *parent = nullptr, std::string path = "");
-    ~MainWindow();
+    explicit MainWindow(QWidget *parent = nullptr, const std::string &path = "");
+    ~MainWindow() override = default;
 
+private slots:
+    void chooseDocument();
+    void startReview();
+    void configureApiKey();
 
 private:
-    QString argv1Path;
+    void setDocument(const QString &filePath);
+    void updateRequirements();
+    QString keysDirectoryPath() const;
+    QList<ApiKeyEntry> loadKeys() const;
+    bool saveKey(const ApiKeyEntry &entry) const;
+    bool removeKey(const QString &id) const;
+    void selectKey(const QString &id);
+    void updateActiveKey(const QList<ApiKeyEntry> &entries);
 
-    QVBoxLayout *centralVLayout;
-    QHBoxLayout *bufferForStuffLayout;
-    QHBoxLayout *documentPreviewLayout;
-    QHBoxLayout *indicatorsLayout;
-    QHBoxLayout *fileLaunchLayout;
-
-    QHBoxLayout *currentUniqLayout;
-    QHBoxLayout *outUniqLayout;
-    QHBoxLayout *hasAiLayout;
-
-
-    QTextEdit *documentPreviewTxtE;
-
-    QLabel *documentPreviewLbl;
-    QLabel *chooseFileLbl;
-    QLabel *currentUniqLbl;
-    QLabel *currentUniqNumLbl;
-    QLabel *outUniqLbl;
-    QLabel *outUniqNumLbl;
-    QLabel *hasAipresenceLbl;
-    QLabel *isAI;
-
-    QPushButton *chooseFileBtn;
-    QPushButton *maxUniqBtn;
-
-    QLineEdit *documentNameLnE;
-
+    QString documentPath;
+    QString apiKey;
+    QString activeKeyId;
+    QLabel *documentNameLabel = nullptr;
+    QLabel *documentMetaLabel = nullptr;
+    QLabel *statusLabel = nullptr;
+    QLabel *apiStatusLabel = nullptr;
+    QComboBox *modelComboBox = nullptr;
+    QLabel *reviewSummaryLabel = nullptr;
+    QLabel *requirementsTitleLabel = nullptr;
+    QFrame *requirementsPanel = nullptr;
+    QPushButton *fileRequirementButton = nullptr;
+    QPushButton *keyRequirementButton = nullptr;
+    QTextEdit *previewText = nullptr;
+    QPushButton *selectButton = nullptr;
+    QPushButton *reviewButton = nullptr;
+    QProgressBar *progressBar = nullptr;
+    QStackedWidget *contentStack = nullptr;
 };
+
 #endif // MAINWINDOW_H

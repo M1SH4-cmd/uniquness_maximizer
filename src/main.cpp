@@ -20,16 +20,13 @@ int main(int argc, char *argv[])
     // doc.load_string("<root><a>test</a></root>");
 
     QApplication a(argc, argv);
-    //MainWindow w;
-    a.setWindowIcon(QIcon(":/res/resources/icon.ico"));
-    //w.show();
-
-    std::string path = "C:\\Main\\test_word.docx";
-    testZip(path);
-
+    std::string path;
     if (argc > 1) {
         path = argv[1];
     }
+    MainWindow w(nullptr, path);
+    a.setWindowIcon(QIcon(":/res/resources/icon.ico"));
+    w.show();
 
     return a.exec();
 }
