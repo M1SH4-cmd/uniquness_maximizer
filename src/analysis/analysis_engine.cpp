@@ -1,9 +1,6 @@
 #include "analysis/analysis_engine.h"
-
 #include "providers/ai_provider.h"
-
 #include <QMetaObject>
-
 #include <utility>
 
 AnalysisEngine::AnalysisEngine(DocumentChunker chunker, PromptBuilder promptBuilder,
