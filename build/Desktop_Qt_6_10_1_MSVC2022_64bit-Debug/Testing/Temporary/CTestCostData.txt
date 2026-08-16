@@ -1,0 +1,7 @@
+document_chunker_test 3 0.00788947
+analysis_contract_test 3 0.00838253
+analysis_engine_test 3 0.0087745
+docx_reader_test 3 0.0155981
+ollama_provider_test 2 0.77907
+ollama_integration_test 3 0.0733197
+---
