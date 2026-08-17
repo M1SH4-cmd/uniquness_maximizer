@@ -225,4 +225,62 @@ if(BUILD_TESTING)
         ${CMAKE_CURRENT_SOURCE_DIR}/include
     )
     add_test(NAME ollama_integration_test COMMAND ollama_integration_test)
+
+    add_executable(document_test
+        tests/document_test.cpp
+        src/core/document.cpp
+    )
+    target_link_libraries(document_test PRIVATE
+        Qt${QT_VERSION_MAJOR}::Core
+    )
+    target_include_directories(document_test PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+    )
+    add_test(NAME document_test COMMAND document_test)
+
+    add_executable(docx_reader_errors_test
+        tests/docx_reader_errors_test.cpp
+        src/core/document.cpp
+        src/document/docx_reader.cpp
+        lib/pugixml/pugixml.cpp
+    )
+    target_link_libraries(docx_reader_errors_test PRIVATE
+        Qt${QT_VERSION_MAJOR}::Core
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/lib/zip.lib
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/lib/zlib.lib
+    )
+    target_include_directories(docx_reader_errors_test PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/pugixml
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/include
+    )
+    add_test(NAME docx_reader_errors_test COMMAND docx_reader_errors_test)
+
+    add_executable(ollama_endpoints_test
+        tests/ollama_endpoints_test.cpp
+        src/providers/ollama_provider.cpp
+        include/providers/ollama_provider.h
+    )
+    target_link_libraries(ollama_endpoints_test PRIVATE
+        Qt${QT_VERSION_MAJOR}::Core
+        Qt${QT_VERSION_MAJOR}::Network
+    )
+    target_include_directories(ollama_endpoints_test PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+    )
+    add_test(NAME ollama_endpoints_test COMMAND ollama_endpoints_test)
+
+    add_executable(mainwindow_keystore_test
+        tests/mainwindow_keystore_test.cpp
+        src/mainwindow.cpp
+        include/mainwindow.h
+    )
+    target_link_libraries(mainwindow_keystore_test PRIVATE
+        Qt${QT_VERSION_MAJOR}::Widgets
+    )
+    target_include_directories(mainwindow_keystore_test PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+    )
+    add_test(NAME mainwindow_keystore_test COMMAND mainwindow_keystore_test)
 endif()

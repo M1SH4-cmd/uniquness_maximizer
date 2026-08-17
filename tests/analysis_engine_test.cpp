@@ -10,6 +10,12 @@ class MockAIProvider final : public AIProvider
 public:
     enum class Mode { Success, ProviderError, InvalidJson };
 
+    static AIResponse successResponse(int index)
+    {
+        const QString paragraphId = QStringLiteral("P00%1").arg(index + 1);
+        return {true, QStringLiteral(R"({"issues":[{"id":"ISSUE_%1","paragraph_id":"%2","category":"style","severity":"medium","confidence":0.87,"original":"Текст","problem":"Проблема","recommendation":"Рекомендация"}]})").arg(index + 1).arg(paragraphId), {}};
+    }
+
     explicit MockAIProvider(QVector<Mode> modes) : m_modes(std::move(modes)) {}
 
     void analyze(const AIRequest &request, std::function<void(AIResponse)> callback) override
@@ -22,8 +28,7 @@ public:
         } else if (mode == Mode::InvalidJson) {
             callback({true, QStringLiteral("not json"), {}});
         } else {
-            const QString paragraphId = QStringLiteral("P00%1").arg(index + 1);
-            callback({true, QStringLiteral(R"({"issues":[{"id":"ISSUE_%1","paragraph_id":"%2","category":"style","severity":"medium","confidence":0.87,"original":"Текст","problem":"Проблема","recommendation":"Рекомендация"}]})").arg(index + 1).arg(paragraphId), {}});
+            callback(successResponse(index));
         }
     }
 
@@ -87,6 +92,79 @@ bool testPartialProviderFailure()
                       QStringLiteral("provider failure: частичный результат неверен"));
 }
 
+// Reports every chunk through a queued connection, so the caller can cancel the
+// engine between chunks the way the UI does.
+class DeferredAIProvider final : public QObject, public AIProvider
+{
+public:
+    void analyze(const AIRequest &request, std::function<void(AIResponse)> callback) override
+    {
+        const int index = requestCount++;
+        QMetaObject::invokeMethod(this, [callback, index]() {
+            callback(MockAIProvider::successResponse(index));
+        }, Qt::QueuedConnection);
+    }
+
+    QString providerName() const override { return QStringLiteral("Deferred"); }
+
+    int requestCount = 0;
+};
+
+bool testCancelStopsQueue()
+{
+    DeferredAIProvider provider;
+    AnalysisEngine engine(DocumentChunker({100}));
+    QEventLoop loop;
+    AnalysisResult result;
+    QObject::connect(&engine, &AnalysisEngine::analysisFinished, &loop, [&result, &loop](const AnalysisResult &finished) {
+        result = finished;
+        loop.quit();
+    });
+    QObject::connect(&engine, &AnalysisEngine::chunkCompleted, &engine, [&engine](int) { engine.cancel(); });
+    engine.start(fixtureDocument(), provider, QStringLiteral("mock-model"));
+    if (!require(engine.isRunning(), QStringLiteral("cancel: движок не отмечен работающим после start"))) return false;
+    loop.exec();
+    return require(result.cancelled && result.isPartial(), QStringLiteral("cancel: результат не отмечен отменённым"))
+           && require(provider.requestCount == 1, QStringLiteral("cancel: после отмены отправлены лишние запросы"))
+           && require(result.processedChunks == 1, QStringLiteral("cancel: обработано больше chunk, чем до отмены"))
+           && require(!engine.isRunning(), QStringLiteral("cancel: движок остался в работающем состоянии"));
+}
+
+bool testStartIgnoredWhileRunning()
+{
+    DeferredAIProvider provider;
+    AnalysisEngine engine(DocumentChunker({100}));
+    QEventLoop loop;
+    int startedSignals = 0;
+    QObject::connect(&engine, &AnalysisEngine::analysisStarted, &engine, [&startedSignals](int) { ++startedSignals; });
+    QObject::connect(&engine, &AnalysisEngine::analysisFinished, &loop, &QEventLoop::quit);
+    engine.start(fixtureDocument(), provider, QStringLiteral("mock-model"));
+    engine.start(fixtureDocument(), provider, QStringLiteral("mock-model"));
+    loop.exec();
+    return require(startedSignals == 1, QStringLiteral("reentrant start: второй start не проигнорирован"))
+           && require(provider.requestCount == 3, QStringLiteral("reentrant start: количество запросов изменилось"));
+}
+
+bool testEmptyDocumentFinishesImmediately()
+{
+    MockAIProvider provider({});
+    AnalysisEngine engine;
+    QEventLoop loop;
+    AnalysisResult result;
+    int totalChunks = -1;
+    QObject::connect(&engine, &AnalysisEngine::analysisStarted, &engine, [&totalChunks](int total) { totalChunks = total; });
+    QObject::connect(&engine, &AnalysisEngine::analysisFinished, &loop, [&result, &loop](const AnalysisResult &finished) {
+        result = finished;
+        loop.quit();
+    });
+    engine.start(Document{}, provider, QStringLiteral("mock-model"));
+    loop.exec();
+    return require(totalChunks == 0, QStringLiteral("empty: сообщено ненулевое число chunk"))
+           && require(provider.requests.isEmpty(), QStringLiteral("empty: провайдер вызван для пустого документа"))
+           && require(result.issues.isEmpty() && result.errors.isEmpty() && !result.isPartial(),
+                      QStringLiteral("empty: результат пустого документа неверен"));
+}
+
 bool testPartialParseFailure()
 {
     MockAIProvider provider({MockAIProvider::Mode::Success, MockAIProvider::Mode::InvalidJson, MockAIProvider::Mode::Success});
@@ -100,5 +178,6 @@ bool testPartialParseFailure()
 int main(int argc, char *argv[])
 {
     QCoreApplication application(argc, argv);
-    return testSuccessfulOrchestration() && testPartialProviderFailure() && testPartialParseFailure() ? 0 : 1;
+    return testSuccessfulOrchestration() && testPartialProviderFailure() && testPartialParseFailure()
+           && testCancelStopsQueue() && testStartIgnoredWhileRunning() && testEmptyDocumentFinishesImmediately() ? 0 : 1;
 }
