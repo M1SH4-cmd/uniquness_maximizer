@@ -37,6 +37,7 @@ private:
     void setDocument(const QString &filePath);
     void updateRequirements();
     QString keysDirectoryPath() const;
+    void migrateLegacyKeys() const;
     QList<ApiKeyEntry> loadKeys() const;
     bool saveKey(const ApiKeyEntry &entry) const;
     bool removeKey(const QString &id) const;

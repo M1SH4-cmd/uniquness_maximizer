@@ -9,6 +9,7 @@
 
 namespace {
 constexpr zip_uint64_t kMaxXmlSize = 64ULL * 1024ULL * 1024ULL;
+constexpr int kMaxNodeDepth = 256;
 
 QByteArray readZipEntry(zip_t *archive, const char *entryName, QString &error)
 {
@@ -57,8 +58,9 @@ QString attributeByName(const pugi::xml_node &node, const char *name)
     return {};
 }
 
-void appendText(const pugi::xml_node &node, QString &text)
+void appendText(const pugi::xml_node &node, QString &text, int depth = 0)
 {
+    if (depth > kMaxNodeDepth) return;
     const QString name = QString::fromLatin1(node.name());
     if (name == QLatin1String("w:t") || name == QLatin1String("w:delText")) {
         text += QString::fromUtf8(node.text().as_string());
@@ -72,7 +74,7 @@ void appendText(const pugi::xml_node &node, QString &text)
         text += QLatin1Char('\n');
         return;
     }
-    for (const pugi::xml_node &child : node.children()) appendText(child, text);
+    for (const pugi::xml_node &child : node.children()) appendText(child, text, depth + 1);
 }
 
 bool isHeading(const QString &style, const pugi::xml_node &paragraphProperties)
