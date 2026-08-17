@@ -24,6 +24,23 @@ OllamaProvider::OllamaProvider(QString baseUrl, int timeoutMs, QObject *parent)
     if (m_timeoutMs < 1) m_timeoutMs = 1;
 }
 
+QUrl OllamaProvider::endpointUrl(const QString &baseUrl, const QString &path)
+{
+    const QUrl base(baseUrl, QUrl::StrictMode);
+    const QString scheme = base.scheme().toLower();
+    if (!base.isValid() || base.host().isEmpty()
+        || (scheme != QLatin1String("http") && scheme != QLatin1String("https"))) {
+        return {};
+    }
+
+    QUrl endpoint;
+    endpoint.setScheme(scheme);
+    endpoint.setHost(base.host());
+    if (base.port() != -1) endpoint.setPort(base.port());
+    endpoint.setPath(base.path() + path);
+    return endpoint;
+}
+
 void OllamaProvider::analyze(const AIRequest &request, std::function<void(AIResponse)> callback)
 {
     if (request.model.trimmed().isEmpty()) {
@@ -31,8 +48,14 @@ void OllamaProvider::analyze(const AIRequest &request, std::function<void(AIResp
         return;
     }
 
+    const QUrl url = endpointUrl(m_baseUrl, kGeneratePath);
+    if (url.isEmpty()) {
+        callback({false, {}, QStringLiteral("Некорректный адрес Ollama: ожидается http(s)://<хост>[:порт].")});
+        return;
+    }
+
     const QByteArray body = buildRequestBody(request);
-    QNetworkRequest networkRequest(QUrl(m_baseUrl + kGeneratePath));
+    QNetworkRequest networkRequest(url);
     networkRequest.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
     networkRequest.setTransferTimeout(m_timeoutMs);
 
@@ -68,7 +91,13 @@ QString OllamaProvider::providerName() const { return QStringLiteral("Ollama"); 
 
 void OllamaProvider::checkAvailability(std::function<void(bool available, const QString &errorMessage)> callback)
 {
-    QNetworkRequest networkRequest(QUrl(m_baseUrl + kVersionPath));
+    const QUrl url = endpointUrl(m_baseUrl, kVersionPath);
+    if (url.isEmpty()) {
+        callback(false, QStringLiteral("Некорректный адрес Ollama: ожидается http(s)://<хост>[:порт]."));
+        return;
+    }
+
+    QNetworkRequest networkRequest(url);
     networkRequest.setTransferTimeout(m_timeoutMs);
 
     QNetworkReply *reply = m_network.get(networkRequest);
@@ -85,7 +114,13 @@ void OllamaProvider::checkAvailability(std::function<void(bool available, const 
 
 void OllamaProvider::fetchAvailableModels(std::function<void(QStringList models, const QString &errorMessage)> callback)
 {
-    QNetworkRequest networkRequest(QUrl(m_baseUrl + kTagsPath));
+    const QUrl url = endpointUrl(m_baseUrl, kTagsPath);
+    if (url.isEmpty()) {
+        callback({}, QStringLiteral("Некорректный адрес Ollama: ожидается http(s)://<хост>[:порт]."));
+        return;
+    }
+
+    QNetworkRequest networkRequest(url);
     networkRequest.setTransferTimeout(m_timeoutMs);
 
     QNetworkReply *reply = m_network.get(networkRequest);

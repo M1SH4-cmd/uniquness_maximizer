@@ -33,6 +33,7 @@ public:
     int timeoutMs() const;
     void setTimeoutMs(int ms);
 
+    static QUrl endpointUrl(const QString &baseUrl, const QString &path);
     static QByteArray buildRequestBody(const AIRequest &request);
     static QString parseResponseText(const QByteArray &body);
     static QString parseOllamaError(const QByteArray &body);

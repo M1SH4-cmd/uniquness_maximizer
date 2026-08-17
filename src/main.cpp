@@ -1,28 +1,17 @@
 #include "mainwindow.h"
 #include <QApplication>
-#include "pugixml.hpp"
-#include <zip.h>
-
-void testZip(const std::string& path) {
-    zip* z = zip_open(path.c_str(), ZIP_RDONLY, nullptr);
-    if (!z) {
-        qDebug() << "libzip не работает";
-    } else {
-        qDebug() << "libzip OK";
-        zip_close(z);
-    }
-}
+#include <QFileInfo>
+#include <QIcon>
 
 int main(int argc, char *argv[])
 {
-    // Тест библиотеки pugixml, правильно ли я блять её подключил
-    // pugi::xml_document doc;
-    // doc.load_string("<root><a>test</a></root>");
-
     QApplication a(argc, argv);
     std::string path;
     if (argc > 1) {
-        path = argv[1];
+        const QFileInfo fileInfo(QString::fromLocal8Bit(argv[1]));
+        if (fileInfo.isFile() && fileInfo.suffix().compare(QLatin1String("docx"), Qt::CaseInsensitive) == 0) {
+            path = fileInfo.absoluteFilePath().toStdString();
+        }
     }
     MainWindow w(nullptr, path);
     a.setWindowIcon(QIcon(":/res/resources/icon.ico"));

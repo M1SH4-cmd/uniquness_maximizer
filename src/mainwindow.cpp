@@ -21,10 +21,21 @@
 #include <QJsonObject>
 #include <QSaveFile>
 #include <QSignalBlocker>
+#include <QStandardPaths>
 #include <QUuid>
 #include <QVBoxLayout>
 
 namespace {
+bool isValidKeyId(const QString &id)
+{
+    return !QUuid::fromString(id).isNull();
+}
+
+void restrictToCurrentUser(const QString &path)
+{
+    QFile::setPermissions(path, QFileDevice::ReadOwner | QFileDevice::WriteOwner);
+}
+
 QFrame *card(QWidget *parent)
 {
     auto *frame = new QFrame(parent);
@@ -220,6 +231,7 @@ MainWindow::MainWindow(QWidget *parent, const std::string &path)
     });
 
     if (!path.empty()) setDocument(QString::fromStdString(path));
+    migrateLegacyKeys();
     updateActiveKey(loadKeys());
     updateRequirements();
 }
@@ -266,7 +278,7 @@ void MainWindow::configureApiKey()
     layout->setContentsMargins(24, 22, 24, 22);
     layout->setSpacing(10);
     layout->addWidget(label(tr("Подключённые ключи"), "dialogTitle"));
-    layout->addWidget(label(tr("Выберите ключ для текущей проверки или добавьте новый. Ключи хранятся локально рядом с приложением."), "dialogHint"));
+    layout->addWidget(label(tr("Выберите ключ для текущей проверки или добавьте новый. Ключи хранятся локально в профиле пользователя и доступны только ему."), "dialogHint"));
 
     auto *keysList = new QWidget(&dialog);
     auto *keysLayout = new QVBoxLayout(keysList);
@@ -415,7 +427,24 @@ void MainWindow::updateRequirements()
 
 QString MainWindow::keysDirectoryPath() const
 {
-    return QDir(QCoreApplication::applicationDirPath()).filePath(QStringLiteral("keys"));
+    const QString base = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    return QDir(base).filePath(QStringLiteral("keys"));
+}
+
+void MainWindow::migrateLegacyKeys() const
+{
+    const QDir legacyDir(QDir(QCoreApplication::applicationDirPath()).filePath(QStringLiteral("keys")));
+    if (!legacyDir.exists() || legacyDir == QDir(keysDirectoryPath())) return;
+
+    const QDir keysDir(keysDirectoryPath());
+    QDir().mkpath(keysDir.absolutePath());
+    restrictToCurrentUser(keysDir.absolutePath());
+    for (const QFileInfo &fileInfo : legacyDir.entryInfoList({QStringLiteral("*.json")}, QDir::Files, QDir::Name)) {
+        const QString target = keysDir.filePath(fileInfo.fileName());
+        if (!QFile::exists(target) && QFile::rename(fileInfo.absoluteFilePath(), target)) {
+            restrictToCurrentUser(target);
+        }
+    }
 }
 
 QList<ApiKeyEntry> MainWindow::loadKeys() const
@@ -428,7 +457,7 @@ QList<ApiKeyEntry> MainWindow::loadKeys() const
         const QJsonObject object = QJsonDocument::fromJson(file.readAll()).object();
         const QString id = object.value(QStringLiteral("id")).toString();
         const QString key = object.value(QStringLiteral("key")).toString();
-        if (id.isEmpty() || key.isEmpty()) continue;
+        if (!isValidKeyId(id) || id != fileInfo.completeBaseName() || key.isEmpty()) continue;
         entries.append({id, object.value(QStringLiteral("provider")).toString(tr("Другая модель")), key,
                         object.value(QStringLiteral("selected")).toBool(false)});
     }
@@ -437,17 +466,24 @@ QList<ApiKeyEntry> MainWindow::loadKeys() const
 
 bool MainWindow::saveKey(const ApiKeyEntry &entry) const
 {
-    QDir().mkpath(keysDirectoryPath());
-    QSaveFile file(QDir(keysDirectoryPath()).filePath(entry.id + QStringLiteral(".json")));
+    if (!isValidKeyId(entry.id)) return false;
+    const QDir keysDir(keysDirectoryPath());
+    QDir().mkpath(keysDir.absolutePath());
+    restrictToCurrentUser(keysDir.absolutePath());
+    QSaveFile file(keysDir.filePath(entry.id + QStringLiteral(".json")));
     if (!file.open(QIODevice::WriteOnly)) return false;
+    file.setPermissions(QFileDevice::ReadOwner | QFileDevice::WriteOwner);
     const QJsonObject object{{QStringLiteral("id"), entry.id}, {QStringLiteral("provider"), entry.provider},
                              {QStringLiteral("key"), entry.key}, {QStringLiteral("selected"), entry.selected}};
     file.write(QJsonDocument(object).toJson(QJsonDocument::Compact));
-    return file.commit();
+    if (!file.commit()) return false;
+    restrictToCurrentUser(file.fileName());
+    return true;
 }
 
 bool MainWindow::removeKey(const QString &id) const
 {
+    if (!isValidKeyId(id)) return false;
     return QFile::remove(QDir(keysDirectoryPath()).filePath(id + QStringLiteral(".json")));
 }
 

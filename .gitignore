@@ -1,0 +1,14 @@
+build/
+build-*/
+out/
+CMakeLists.txt.user
+.qtcreator/
+.vs/
+.cache/
+
+# Local API key storage — never commit
+keys/
+*.pem
+*.key
+.env
+.env.*
