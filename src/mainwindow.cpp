@@ -1,7 +1,9 @@
 #include "mainwindow.h"
 
+#include <QDebug>
 #include <QFileDialog>
 #include <QFileInfo>
+#include <QMessageBox>
 #include <QFrame>
 #include <QHBoxLayout>
 #include <QDialog>
@@ -47,6 +49,12 @@ QString providerBadge(const QString &provider)
     if (provider == QStringLiteral("Anthropic")) return QStringLiteral("A");
     if (provider == QStringLiteral("Google Gemini")) return QStringLiteral("G");
     return QStringLiteral("AI");
+}
+
+void reportProblem(QStringList *problems, const QString &message)
+{
+    qWarning().noquote() << message;
+    if (problems) problems->append(message);
 }
 
 QString providerColor(const QString &provider)
@@ -230,28 +238,67 @@ void MainWindow::chooseDocument()
     if (!path.isEmpty()) setDocument(path);
 }
 
-void MainWindow::setDocument(const QString &filePath)
+void MainWindow::setStatus(const QString &text, const char *objectName)
 {
-    documentPath = filePath;
-    const QFileInfo info(filePath);
-    documentNameLabel->setText(info.fileName());
-    documentMetaLabel->setText(tr("%1 · %2 КБ").arg(info.suffix().toUpper()).arg(qMax<qint64>(1, info.size() / 1024)));
-    statusLabel->setText(tr("Файл готов"));
-    statusLabel->setObjectName("statusReady");
+    statusLabel->setText(text);
+    statusLabel->setObjectName(QString::fromLatin1(objectName));
     statusLabel->style()->unpolish(statusLabel);
     statusLabel->style()->polish(statusLabel);
+}
+
+void MainWindow::setDocument(const QString &filePath)
+{
+    const QFileInfo info(filePath);
+    QString error;
+    if (!info.exists() || !info.isFile()) {
+        error = tr("Файл не найден: %1").arg(filePath);
+    } else if (!info.isReadable()) {
+        error = tr("Нет доступа к файлу: %1").arg(filePath);
+    } else if (info.suffix().compare(QLatin1String("docx"), Qt::CaseInsensitive) != 0) {
+        error = tr("Поддерживаются только документы Microsoft Word (.docx).");
+    } else if (info.size() == 0) {
+        error = tr("Файл пуст: %1").arg(info.fileName());
+    }
+
+    if (!error.isEmpty()) {
+        documentPath.clear();
+        documentNameLabel->setText(tr("Выберите работу для анализа"));
+        documentMetaLabel->setText(error);
+        setStatus(tr("Файл не принят"), "statusIdle");
+        QMessageBox::warning(this, tr("Не удалось открыть документ"), error);
+        updateRequirements();
+        return;
+    }
+
+    documentPath = filePath;
+    documentNameLabel->setText(info.fileName());
+    documentMetaLabel->setText(tr("%1 · %2 КБ").arg(info.suffix().toUpper()).arg(qMax<qint64>(1, info.size() / 1024)));
+    setStatus(tr("Файл готов"), "statusReady");
     previewText->setText(tr("Документ «%1» готов к проверке.\n\nЗапустите анализ, чтобы получить ориентиры для самостоятельной доработки: структуру текста, ясность формулировок и оформление источников.").arg(info.fileName()));
     updateRequirements();
 }
 
 void MainWindow::startReview()
 {
+    const QFileInfo info(documentPath);
+    if (documentPath.isEmpty() || !info.isFile() || !info.isReadable()) {
+        documentPath.clear();
+        documentNameLabel->setText(tr("Выберите работу для анализа"));
+        setStatus(tr("Ожидание файла"), "statusIdle");
+        updateRequirements();
+        QMessageBox::warning(this, tr("Документ недоступен"),
+                             tr("Файл документа больше недоступен. Выберите файл заново."));
+        return;
+    }
+    if (apiKey.isEmpty()) {
+        updateRequirements();
+        QMessageBox::warning(this, tr("Нет API-ключа"), tr("Выберите API-ключ через «Настроить ИИ»."));
+        return;
+    }
+
     progressBar->show();
     progressBar->setValue(100);
-    statusLabel->setText(tr("Проверка завершена"));
-    statusLabel->setObjectName("statusDone");
-    statusLabel->style()->unpolish(statusLabel);
-    statusLabel->style()->polish(statusLabel);
+    setStatus(tr("Проверка завершена"), "statusDone");
     reviewSummaryLabel->setText(tr("Готово: просмотрите рекомендации в области предпросмотра."));
     previewText->setText(tr("Проверка завершена\n\n1. Просмотрите переходы между разделами — убедитесь, что каждый вывод опирается на приведённые аргументы.\n\n2. Перечитайте длинные предложения: если мысль можно выразить проще, уточните её собственными словами.\n\n3. Сверьте цитаты и список литературы с исходными источниками.\n\nЭто рабочий список ориентиров, а не автоматическое изменение документа."));
 }
@@ -279,7 +326,12 @@ void MainWindow::configureApiKey()
             delete item;
         }
 
-        const QList<ApiKeyEntry> entries = loadKeys();
+        QStringList problems;
+        const QList<ApiKeyEntry> entries = loadKeys(&problems);
+        if (!problems.isEmpty()) {
+            keysLayout->addWidget(label(tr("Часть сохранённых ключей не удалось прочитать:\n%1")
+                                            .arg(problems.join(QLatin1Char('\n'))), "dialogError", keysList));
+        }
         if (entries.isEmpty()) {
             keysLayout->addWidget(label(tr("Сохранённых ключей пока нет."), "dialogHint", keysList));
             return;
@@ -319,7 +371,11 @@ void MainWindow::configureApiKey()
             deleteButton->setFixedSize(32, 32);
             rowLayout->addWidget(deleteButton);
             connect(deleteButton, &QPushButton::clicked, &dialog, [this, &dialog, entry]() {
-                removeKey(entry.id);
+                QString error;
+                if (!removeKey(entry.id, &error)) {
+                    QMessageBox::warning(&dialog, tr("Не удалось удалить ключ"), error);
+                    return;
+                }
                 if (activeKeyId == entry.id) updateActiveKey(loadKeys());
                 dialog.accept();
             });
@@ -340,6 +396,7 @@ void MainWindow::configureApiKey()
         QDialog { background: #182235; color: #e5e7eb; font-family: "Segoe UI"; }
         QLabel#dialogTitle { color: #f1f5f9; font-size: 18px; font-weight: 600; }
         QLabel#dialogHint { color: #94a3b8; font-size: 13px; }
+        QLabel#dialogError { color: #fda4af; font-size: 12px; }
         QLabel#keyProvider { color: #f1f5f9; font-size: 14px; font-weight: 600; }
         QLabel#keyMasked { color: #94a3b8; font-size: 12px; }
         QFrame#keyRow, QFrame#keyRowSelected { border-radius: 10px; }
@@ -382,7 +439,12 @@ void MainWindow::configureApiKey()
         entry.provider = providerBox->currentText();
         entry.key = keyInput->text().trimmed();
         entry.selected = loadKeys().isEmpty();
-        if (saveKey(entry) && entry.selected) selectKey(entry.id);
+        QString error;
+        if (!saveKey(entry, &error)) {
+            QMessageBox::warning(&dialog, tr("Не удалось сохранить ключ"), error);
+            return;
+        }
+        if (entry.selected) selectKey(entry.id);
         dialog.accept();
     });
     connect(buttons, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
@@ -418,47 +480,101 @@ QString MainWindow::keysDirectoryPath() const
     return QDir(QCoreApplication::applicationDirPath()).filePath(QStringLiteral("keys"));
 }
 
-QList<ApiKeyEntry> MainWindow::loadKeys() const
+QList<ApiKeyEntry> MainWindow::loadKeys(QStringList *problems) const
 {
     QList<ApiKeyEntry> entries;
     const QDir keysDir(keysDirectoryPath());
+    if (!keysDir.exists()) return entries;
     for (const QFileInfo &fileInfo : keysDir.entryInfoList({QStringLiteral("*.json")}, QDir::Files, QDir::Name)) {
         QFile file(fileInfo.absoluteFilePath());
-        if (!file.open(QIODevice::ReadOnly)) continue;
-        const QJsonObject object = QJsonDocument::fromJson(file.readAll()).object();
+        if (!file.open(QIODevice::ReadOnly)) {
+            reportProblem(problems, tr("%1: не удалось открыть файл ключа (%2)")
+                                          .arg(fileInfo.fileName(), file.errorString()));
+            continue;
+        }
+        QJsonParseError parseError;
+        const QJsonDocument document = QJsonDocument::fromJson(file.readAll(), &parseError);
+        if (parseError.error != QJsonParseError::NoError || !document.isObject()) {
+            reportProblem(problems, tr("%1: файл ключа содержит некорректный JSON (%2)")
+                                          .arg(fileInfo.fileName(), parseError.errorString()));
+            continue;
+        }
+        const QJsonObject object = document.object();
         const QString id = object.value(QStringLiteral("id")).toString();
         const QString key = object.value(QStringLiteral("key")).toString();
-        if (id.isEmpty() || key.isEmpty()) continue;
+        if (id.isEmpty() || key.isEmpty()) {
+            reportProblem(problems, tr("%1: в файле ключа нет полей id или key").arg(fileInfo.fileName()));
+            continue;
+        }
         entries.append({id, object.value(QStringLiteral("provider")).toString(tr("Другая модель")), key,
                         object.value(QStringLiteral("selected")).toBool(false)});
     }
     return entries;
 }
 
-bool MainWindow::saveKey(const ApiKeyEntry &entry) const
+bool MainWindow::saveKey(const ApiKeyEntry &entry, QString *errorMessage) const
 {
-    QDir().mkpath(keysDirectoryPath());
-    QSaveFile file(QDir(keysDirectoryPath()).filePath(entry.id + QStringLiteral(".json")));
-    if (!file.open(QIODevice::WriteOnly)) return false;
+    const auto fail = [errorMessage](const QString &message) {
+        qWarning().noquote() << message;
+        if (errorMessage) *errorMessage = message;
+        return false;
+    };
+
+    const QString directory = keysDirectoryPath();
+    if (!QDir().mkpath(directory)) {
+        return fail(tr("Не удалось создать папку для ключей: %1").arg(directory));
+    }
+    QSaveFile file(QDir(directory).filePath(entry.id + QStringLiteral(".json")));
+    if (!file.open(QIODevice::WriteOnly)) {
+        return fail(tr("Не удалось открыть файл ключа для записи: %1").arg(file.errorString()));
+    }
     const QJsonObject object{{QStringLiteral("id"), entry.id}, {QStringLiteral("provider"), entry.provider},
                              {QStringLiteral("key"), entry.key}, {QStringLiteral("selected"), entry.selected}};
-    file.write(QJsonDocument(object).toJson(QJsonDocument::Compact));
-    return file.commit();
+    const QByteArray payload = QJsonDocument(object).toJson(QJsonDocument::Compact);
+    if (file.write(payload) != payload.size()) {
+        const QString message = tr("Не удалось записать файл ключа: %1").arg(file.errorString());
+        file.cancelWriting();
+        return fail(message);
+    }
+    if (!file.commit()) {
+        return fail(tr("Не удалось сохранить файл ключа: %1").arg(file.errorString()));
+    }
+    if (errorMessage) errorMessage->clear();
+    return true;
 }
 
-bool MainWindow::removeKey(const QString &id) const
+bool MainWindow::removeKey(const QString &id, QString *errorMessage) const
 {
-    return QFile::remove(QDir(keysDirectoryPath()).filePath(id + QStringLiteral(".json")));
+    QFile file(QDir(keysDirectoryPath()).filePath(id + QStringLiteral(".json")));
+    if (!file.exists()) {
+        if (errorMessage) errorMessage->clear();
+        return true;
+    }
+    if (!file.remove()) {
+        const QString message = tr("Не удалось удалить файл ключа: %1").arg(file.errorString());
+        qWarning().noquote() << message;
+        if (errorMessage) *errorMessage = message;
+        return false;
+    }
+    if (errorMessage) errorMessage->clear();
+    return true;
 }
 
 void MainWindow::selectKey(const QString &id)
 {
     QList<ApiKeyEntry> entries = loadKeys();
+    QStringList failures;
     for (ApiKeyEntry &entry : entries) {
         entry.selected = entry.id == id;
-        saveKey(entry);
+        QString error;
+        if (!saveKey(entry, &error)) failures.append(error);
     }
     updateActiveKey(entries);
+    if (!failures.isEmpty()) {
+        QMessageBox::warning(this, tr("Выбор ключа не сохранён"),
+                             tr("Выбранный ключ используется в текущей сессии, но выбор не сохранён на диске:\n%1")
+                                 .arg(failures.join(QLatin1Char('\n'))));
+    }
 }
 
 void MainWindow::updateActiveKey(const QList<ApiKeyEntry> &entries)

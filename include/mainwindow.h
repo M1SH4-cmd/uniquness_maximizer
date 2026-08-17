@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QList>
+#include <QStringList>
 #include <string>
 
 class QLabel;
@@ -35,11 +36,12 @@ private slots:
 
 private:
     void setDocument(const QString &filePath);
+    void setStatus(const QString &text, const char *objectName);
     void updateRequirements();
     QString keysDirectoryPath() const;
-    QList<ApiKeyEntry> loadKeys() const;
-    bool saveKey(const ApiKeyEntry &entry) const;
-    bool removeKey(const QString &id) const;
+    QList<ApiKeyEntry> loadKeys(QStringList *problems = nullptr) const;
+    bool saveKey(const ApiKeyEntry &entry, QString *errorMessage = nullptr) const;
+    bool removeKey(const QString &id, QString *errorMessage = nullptr) const;
     void selectKey(const QString &id);
     void updateActiveKey(const QList<ApiKeyEntry> &entries);
 

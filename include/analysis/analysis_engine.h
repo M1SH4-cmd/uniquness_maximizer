@@ -18,12 +18,13 @@ public:
     explicit AnalysisEngine(DocumentChunker chunker = DocumentChunker{}, PromptBuilder promptBuilder = {},
                             ResponseParser responseParser = {}, QObject *parent = nullptr);
 
-    void start(const Document &document, AIProvider &provider, const QString &model = {}, double temperature = 0.2);
+    bool start(const Document &document, AIProvider &provider, const QString &model = {}, double temperature = 0.2);
     void cancel();
     bool isRunning() const;
 
 signals:
     void analysisStarted(int totalChunks);
+    void startRejected(const QString &message);
     void progressChanged(int current, int total);
     void chunkCompleted(int chunkIndex);
     void issueFound(const Issue &issue);

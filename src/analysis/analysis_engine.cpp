@@ -1,5 +1,6 @@
 #include "analysis/analysis_engine.h"
 #include "providers/ai_provider.h"
+#include <QDebug>
 #include <QMetaObject>
 #include <utility>
 
@@ -12,10 +13,17 @@ AnalysisEngine::AnalysisEngine(DocumentChunker chunker, PromptBuilder promptBuil
 {
 }
 
-void AnalysisEngine::start(const Document &document, AIProvider &provider, const QString &model, double temperature)
+bool AnalysisEngine::start(const Document &document, AIProvider &provider, const QString &model, double temperature)
 {
-    if (m_running) return;
+    if (m_running) {
+        emit startRejected(QStringLiteral("Анализ уже выполняется."));
+        return false;
+    }
     m_chunks = m_chunker.split(document);
+    if (m_chunks.isEmpty()) {
+        emit startRejected(QStringLiteral("Документ не содержит текста для анализа."));
+        return false;
+    }
     m_result = {};
     m_provider = &provider;
     m_model = model;
@@ -25,6 +33,7 @@ void AnalysisEngine::start(const Document &document, AIProvider &provider, const
     m_running = true;
     emit analysisStarted(m_chunks.size());
     QMetaObject::invokeMethod(this, &AnalysisEngine::processNextChunk, Qt::QueuedConnection);
+    return true;
 }
 
 void AnalysisEngine::cancel()
@@ -56,6 +65,10 @@ void AnalysisEngine::processNextChunk()
 void AnalysisEngine::handleResponse(int chunkIndex, AIResponse response)
 {
     if (!m_running) return;
+    if (chunkIndex < 0 || chunkIndex >= m_chunks.size()) {
+        qWarning("AnalysisEngine: получен ответ для неизвестного chunk %d, ответ отброшен", chunkIndex);
+        return;
+    }
     const DocumentChunk &chunk = m_chunks.at(chunkIndex);
     ++m_result.processedChunks;
     m_result.processedParagraphs += chunk.paragraphIds.size();
