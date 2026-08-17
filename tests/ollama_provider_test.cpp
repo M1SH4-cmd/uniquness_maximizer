@@ -145,6 +145,41 @@ bool testModelNotFound()
            && require(response.errorMessage.contains(QStringLiteral("not found")), QStringLiteral("404: сообщение не описывает отсутствие модели"));
 }
 
+bool testResponseParseErrorReported()
+{
+    QString error;
+    if (!require(OllamaProvider::parseResponseText(QByteArrayLiteral("definitely not json"), &error).isEmpty(),
+                 QStringLiteral("parse error: некорректное тело принято"))) return false;
+    if (!require(!error.isEmpty(), QStringLiteral("parse error: причина ошибки потеряна"))) return false;
+    error.clear();
+    if (!require(OllamaProvider::parseResponseText(QByteArrayLiteral(R"({"done":true})"), &error).isEmpty(),
+                 QStringLiteral("parse error: ответ без поля response принят"))) return false;
+    if (!require(error.contains(QStringLiteral("response")), QStringLiteral("parse error: не указано отсутствующее поле"))) return false;
+    return require(!OllamaProvider::parseResponseText(QByteArrayLiteral(R"({"response":"{}"})"), &error).isEmpty()
+                       && error.isEmpty(),
+                   QStringLiteral("parse error: корректный ответ отклонён"));
+}
+
+bool testAvailabilityErrorReported()
+{
+    FakeOllamaServer server(500, R"({"error":"internal failure"})");
+    if (!require(server.start(), QStringLiteral("availability: не удалось запустить fake server"))) return false;
+    OllamaProvider provider(QStringLiteral("http://127.0.0.1:%1").arg(server.port()));
+    QEventLoop loop;
+    bool available = true;
+    QString error;
+    provider.checkAvailability([&](bool isAvailable, const QString &message) {
+        available = isAvailable;
+        error = message;
+        loop.quit();
+    });
+    QTimer::singleShot(15000, &loop, &QEventLoop::quit);
+    loop.exec();
+    return require(!available, QStringLiteral("availability: HTTP 500 принят как доступность"))
+           && require(error.contains(QStringLiteral("500")) && error.contains(QStringLiteral("internal failure")),
+                      QStringLiteral("availability: ошибка не описана: %1").arg(error));
+}
+
 bool testEmptyModelRejected()
 {
     OllamaProvider provider;
@@ -158,5 +193,6 @@ int main(int argc, char *argv[])
 {
     QCoreApplication application(argc, argv);
     return testRequestBodyBuilding() && testSuccessfulResponse() && testOllamaUnavailable()
-           && testMalformedResponse() && testModelNotFound() && testEmptyModelRejected() ? 0 : 1;
+           && testMalformedResponse() && testModelNotFound() && testEmptyModelRejected()
+           && testResponseParseErrorReported() && testAvailabilityErrorReported() ? 0 : 1;
 }

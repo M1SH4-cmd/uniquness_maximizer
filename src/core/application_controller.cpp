@@ -57,9 +57,20 @@ bool ApplicationController::startAnalysis(const QString &docxPath, const QString
         emit analysisFinished(result);
     });
 
+    QString rejection;
+    const QMetaObject::Connection rejectionConnection =
+        connect(m_engine.get(), &AnalysisEngine::startRejected, this,
+                [&rejection](const QString &message) { rejection = message; });
+
     m_running = true;
     // model может быть пустой — OllamaProvider сам отклонит; температура по умолчанию 0.2
-    m_engine->start(document, *m_provider, model.isEmpty() ? QStringLiteral("qwen2.5:3b") : model, 0.2);
+    const bool started = m_engine->start(document, *m_provider, model.isEmpty() ? QStringLiteral("qwen2.5:3b") : model, 0.2);
+    disconnect(rejectionConnection);
+    if (!started) {
+        m_running = false;
+        emit analysisFailed(rejection.isEmpty() ? QStringLiteral("Не удалось запустить анализ.") : rejection);
+        return false;
+    }
     return true;
 }
 

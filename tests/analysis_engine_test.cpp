@@ -87,6 +87,20 @@ bool testPartialProviderFailure()
                       QStringLiteral("provider failure: частичный результат неверен"));
 }
 
+bool testEmptyDocumentRejected()
+{
+    MockAIProvider provider({});
+    AnalysisEngine engine;
+    QString rejection;
+    QObject::connect(&engine, &AnalysisEngine::startRejected, &engine, [&rejection](const QString &message) { rejection = message; });
+    const bool started = engine.start({QStringLiteral("empty.docx"), QStringLiteral("Empty"), {{"P001", "   ", 0, 0, {}}}}, provider,
+                                      QStringLiteral("mock-model"));
+    return require(!started, QStringLiteral("empty document: анализ запущен без текста"))
+           && require(!rejection.isEmpty(), QStringLiteral("empty document: отказ не объяснён"))
+           && require(provider.requests.isEmpty(), QStringLiteral("empty document: отправлен запрос к провайдеру"))
+           && require(!engine.isRunning(), QStringLiteral("empty document: движок остался в работе"));
+}
+
 bool testPartialParseFailure()
 {
     MockAIProvider provider({MockAIProvider::Mode::Success, MockAIProvider::Mode::InvalidJson, MockAIProvider::Mode::Success});
@@ -100,5 +114,6 @@ bool testPartialParseFailure()
 int main(int argc, char *argv[])
 {
     QCoreApplication application(argc, argv);
-    return testSuccessfulOrchestration() && testPartialProviderFailure() && testPartialParseFailure() ? 0 : 1;
+    return testSuccessfulOrchestration() && testPartialProviderFailure() && testPartialParseFailure()
+           && testEmptyDocumentRejected() ? 0 : 1;
 }

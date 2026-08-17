@@ -36,7 +36,7 @@ public:
     void setTimeoutMs(int ms);
 
     static QByteArray buildRequestBody(const AIRequest &request);
-    static QString parseResponseText(const QByteArray &body);
+    static QString parseResponseText(const QByteArray &body, QString *errorMessage = nullptr);
     static QString parseOllamaError(const QByteArray &body);
 
 private:

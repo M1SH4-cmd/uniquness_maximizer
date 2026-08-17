@@ -24,6 +24,18 @@ OllamaProvider::OllamaProvider(QString baseUrl, int timeoutMs, QObject *parent)
     if (m_timeoutMs < 1) m_timeoutMs = 1;
 }
 
+OllamaProvider::~OllamaProvider()
+{
+    const QHash<QNetworkReply *, std::function<void(QNetworkReply *)>> pending = m_pending;
+    m_pending.clear();
+    for (auto it = pending.cbegin(); it != pending.cend(); ++it) {
+        QNetworkReply *reply = it.key();
+        reply->disconnect(this);
+        reply->abort();
+        it.value()(reply);
+    }
+}
+
 void OllamaProvider::analyze(const AIRequest &request, std::function<void(AIResponse)> callback)
 {
     if (request.model.trimmed().isEmpty()) {
@@ -50,10 +62,12 @@ void OllamaProvider::analyze(const AIRequest &request, std::function<void(AIResp
                 .arg(statusCode)
                 .arg(parseOllamaError(data));
         } else {
-            response.rawText = parseResponseText(data);
+            QString parseError;
+            response.rawText = parseResponseText(data, &parseError);
             if (response.rawText.isEmpty()) {
                 response.success = false;
-                response.errorMessage = QStringLiteral("Ollama вернула пустой или некорректный ответ.");
+                response.errorMessage = QStringLiteral("Ollama вернула пустой или некорректный ответ: %1")
+                    .arg(parseError.isEmpty() ? QStringLiteral("поле 'response' пусто") : parseError);
             } else {
                 response.success = true;
             }
@@ -73,10 +87,17 @@ void OllamaProvider::checkAvailability(std::function<void(bool available, const 
 
     QNetworkReply *reply = m_network.get(networkRequest);
     m_pending.insert(reply, [callback](QNetworkReply *finishedReply) {
-        finishedReply->readAll();
-        const bool available = finishedReply->error() == QNetworkReply::NoError
-                               && finishedReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() == 200;
-        const QString error = available ? QString() : finishedReply->errorString();
+        const QByteArray data = finishedReply->readAll();
+        const int statusCode = finishedReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
+        const bool available = finishedReply->error() == QNetworkReply::NoError && statusCode == 200;
+        QString error;
+        if (!available) {
+            if (statusCode < 100) {
+                error = QStringLiteral("Ollama недоступна: %1").arg(finishedReply->errorString());
+            } else {
+                error = QStringLiteral("Ollama вернула HTTP %1: %2").arg(statusCode).arg(parseOllamaError(data));
+            }
+        }
         finishedReply->deleteLater();
         callback(available, error);
     });
@@ -98,7 +119,9 @@ void OllamaProvider::fetchAvailableModels(std::function<void(QStringList models,
         if (ok) {
             QJsonParseError parseError;
             const QJsonDocument document = QJsonDocument::fromJson(data, &parseError);
-            if (parseError.error == QJsonParseError::NoError && document.isObject()) {
+            if (parseError.error != QJsonParseError::NoError || !document.isObject()) {
+                error = QStringLiteral("Ollama вернула некорректный ответ /api/tags: %1.").arg(parseError.errorString());
+            } else {
                 const QJsonArray names = document.object().value(QStringLiteral("models")).toArray();
                 for (const QJsonValue &value : names) {
                     if (value.isObject()) {
@@ -106,11 +129,13 @@ void OllamaProvider::fetchAvailableModels(std::function<void(QStringList models,
                         if (!name.isEmpty()) models.append(name);
                     }
                 }
-            } else {
-                error = QStringLiteral("Ollama вернула некорректный ответ /api/tags.");
             }
+        } else if (finishedReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() < 100) {
+            error = QStringLiteral("Ollama недоступна: %1").arg(finishedReply->errorString());
         } else {
-            error = finishedReply->errorString();
+            error = QStringLiteral("Ollama вернула HTTP %1: %2")
+                .arg(finishedReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt())
+                .arg(parseOllamaError(data));
         }
         finishedReply->deleteLater();
         callback(models, error);
@@ -150,13 +175,22 @@ QByteArray OllamaProvider::buildRequestBody(const AIRequest &request)
     return QJsonDocument(object).toJson(QJsonDocument::Compact);
 }
 
-QString OllamaProvider::parseResponseText(const QByteArray &body)
+QString OllamaProvider::parseResponseText(const QByteArray &body, QString *errorMessage)
 {
+    const auto fail = [errorMessage](const QString &message) {
+        if (errorMessage) *errorMessage = message;
+        return QString();
+    };
+
     QJsonParseError parseError;
     const QJsonDocument document = QJsonDocument::fromJson(body, &parseError);
-    if (parseError.error != QJsonParseError::NoError || !document.isObject()) return {};
+    if (parseError.error != QJsonParseError::NoError) {
+        return fail(QStringLiteral("тело ответа не является JSON (%1)").arg(parseError.errorString()));
+    }
+    if (!document.isObject()) return fail(QStringLiteral("тело ответа не является JSON-объектом"));
     const QJsonValue response = document.object().value(QStringLiteral("response"));
-    if (!response.isString()) return {};
+    if (!response.isString()) return fail(QStringLiteral("в ответе нет строкового поля 'response'"));
+    if (errorMessage) errorMessage->clear();
     return response.toString().trimmed();
 }
 
@@ -174,7 +208,10 @@ QString OllamaProvider::parseOllamaError(const QByteArray &body)
 void OllamaProvider::handleReplyFinished(QNetworkReply *reply)
 {
     const auto callbackIt = m_pending.find(reply);
-    if (callbackIt == m_pending.end()) return;
+    if (callbackIt == m_pending.end()) {
+        reply->deleteLater();
+        return;
+    }
     const std::function<void(QNetworkReply *)> callback = callbackIt.value();
     m_pending.erase(callbackIt);
     callback(reply);
@@ -187,9 +224,4 @@ void OllamaProvider::cancelAll()
         ++it; // Increment before potential removal to avoid iterator invalidation
         reply->abort();
     }
-}
-
-OllamaProvider::~OllamaProvider()
-{
-    cancelAll();
 }

@@ -10,12 +10,18 @@
 namespace {
 constexpr zip_uint64_t kMaxXmlSize = 64ULL * 1024ULL * 1024ULL;
 
+QString zipErrorString(zip_t *archive)
+{
+    return QString::fromUtf8(zip_strerror(archive));
+}
+
 QByteArray readZipEntry(zip_t *archive, const char *entryName, QString &error)
 {
     zip_stat_t stat;
     zip_stat_init(&stat);
     if (zip_stat(archive, entryName, ZIP_FL_ENC_GUESS, &stat) != 0) {
-        error = QStringLiteral("В DOCX отсутствует %1.").arg(QString::fromLatin1(entryName));
+        error = QStringLiteral("В DOCX отсутствует %1 (%2).")
+                    .arg(QString::fromLatin1(entryName), zipErrorString(archive));
         return {};
     }
     if (stat.size == 0 || stat.size > kMaxXmlSize) {
@@ -25,15 +31,19 @@ QByteArray readZipEntry(zip_t *archive, const char *entryName, QString &error)
 
     zip_file_t *entry = zip_fopen(archive, entryName, ZIP_FL_ENC_GUESS);
     if (!entry) {
-        error = QStringLiteral("Не удалось открыть %1 в DOCX.").arg(QString::fromLatin1(entryName));
+        error = QStringLiteral("Не удалось открыть %1 в DOCX (%2).")
+                    .arg(QString::fromLatin1(entryName), zipErrorString(archive));
         return {};
     }
 
     QByteArray data(static_cast<qsizetype>(stat.size), Qt::Uninitialized);
     const zip_int64_t bytesRead = zip_fread(entry, data.data(), stat.size);
+    const QString readError = bytesRead < 0 ? QString::fromUtf8(zip_file_strerror(entry)) : QString();
     zip_fclose(entry);
     if (bytesRead != static_cast<zip_int64_t>(stat.size)) {
-        error = QStringLiteral("Не удалось полностью прочитать %1.").arg(QString::fromLatin1(entryName));
+        error = QStringLiteral("Не удалось полностью прочитать %1%2.")
+                    .arg(QString::fromLatin1(entryName),
+                         readError.isEmpty() ? QString() : QStringLiteral(": %1").arg(readError));
         return {};
     }
     return data;
@@ -94,13 +104,22 @@ Document DocxReader::read(const QString &path)
     int zipError = 0;
     zip_t *archive = zip_open(QFile::encodeName(path).constData(), ZIP_RDONLY, &zipError);
     if (!archive) {
-        m_errorString = QStringLiteral("Не удалось открыть DOCX как ZIP-архив (ошибка %1).").arg(zipError);
+        zip_error_t error;
+        zip_error_init_with_code(&error, zipError);
+        m_errorString = QStringLiteral("Не удалось открыть DOCX как ZIP-архив: %1.")
+                            .arg(QString::fromUtf8(zip_error_strerror(&error)));
+        zip_error_fini(&error);
         return {};
     }
 
     const QByteArray xmlData = readZipEntry(archive, "word/document.xml", m_errorString);
     zip_close(archive);
-    if (xmlData.isEmpty()) return {};
+    if (xmlData.isEmpty()) {
+        if (m_errorString.isEmpty()) {
+            m_errorString = QStringLiteral("Не удалось прочитать word/document.xml из DOCX.");
+        }
+        return {};
+    }
 
     pugi::xml_document xml;
     const pugi::xml_parse_result parseResult = xml.load_buffer(xmlData.constData(), static_cast<size_t>(xmlData.size()));
