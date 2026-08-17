@@ -60,6 +60,27 @@ bool testLongParagraph()
            && require(chunks[0].text == longText && chunks[0].paragraphIds == QVector<QString>({"P017"}), QStringLiteral("long: длинный абзац потерян или обрезан"));
 }
 
+bool testOptionsClamping()
+{
+    const DocumentChunker defaultChunker;
+    if (!require(defaultChunker.options().maxCharacters == 6000, QStringLiteral("options: размер chunk по умолчанию изменён"))) return false;
+    const DocumentChunker zeroChunker({0});
+    const DocumentChunker negativeChunker({-100});
+    if (!require(zeroChunker.options().maxCharacters == 1 && negativeChunker.options().maxCharacters == 1,
+                 QStringLiteral("options: неположительный размер chunk не ограничен"))) return false;
+    const auto chunks = zeroChunker.split(document({paragraph("P001", "Абзац один", 0), paragraph("P002", "Абзац два", 1)}));
+    return require(chunks.size() == 2, QStringLiteral("options: при минимальном размере каждый абзац должен быть отдельным chunk"))
+           && require(chunks[1].id == QStringLiteral("C002"), QStringLiteral("options: нумерация chunk нарушена"));
+}
+
+bool testEmptyDocument()
+{
+    const DocumentChunker chunker;
+    return require(chunker.split(Document{}).isEmpty(), QStringLiteral("empty document: пустой документ дал chunk"))
+           && require(chunker.split(document({paragraph("P001", "   ", 0)})).isEmpty(),
+                      QStringLiteral("empty document: документ из пробелов дал chunk"));
+}
+
 bool testBlankParagraphs()
 {
     const DocumentChunker chunker({100});
@@ -72,5 +93,6 @@ bool testBlankParagraphs()
 int main(int argc, char *argv[])
 {
     QCoreApplication application(argc, argv);
-    return testSimpleDocument() && testSizeLimit() && testSectionBoundary() && testLongParagraph() && testBlankParagraphs() ? 0 : 1;
+    return testSimpleDocument() && testSizeLimit() && testSectionBoundary() && testLongParagraph()
+           && testBlankParagraphs() && testOptionsClamping() && testEmptyDocument() ? 0 : 1;
 }
