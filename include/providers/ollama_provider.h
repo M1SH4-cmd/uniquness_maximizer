@@ -22,12 +22,14 @@ public:
     explicit OllamaProvider(QString baseUrl = QStringLiteral("http://127.0.0.1:11434"),
                             int timeoutMs = 120000,
                             QObject *parent = nullptr);
+    ~OllamaProvider() override;
 
     void analyze(const AIRequest &request, std::function<void(AIResponse)> callback) override;
     QString providerName() const override;
 
     void checkAvailability(std::function<void(bool available, const QString &errorMessage)> callback);
     void fetchAvailableModels(std::function<void(QStringList models, const QString &errorMessage)> callback);
+    void cancelAll();
 
     QString baseUrl() const;
     void setBaseUrl(const QString &url);
