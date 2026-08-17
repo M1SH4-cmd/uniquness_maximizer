@@ -1,5 +1,9 @@
 #include "mainwindow.h"
 
+#include "core/application_controller.h"
+#include "core/analysis_types.h"
+
+#include <QCloseEvent>
 #include <QDebug>
 #include <QFileDialog>
 #include <QFileInfo>
@@ -25,6 +29,7 @@
 #include <QSignalBlocker>
 #include <QUuid>
 #include <QVBoxLayout>
+#include <QMessageBox>
 
 namespace {
 QFrame *card(QWidget *parent)
@@ -67,7 +72,8 @@ QString providerColor(const QString &provider)
 }
 
 MainWindow::MainWindow(QWidget *parent, const std::string &path)
-    : QMainWindow(parent)
+    : QMainWindow(parent),
+      controller(new ApplicationController(this))
 {
     setWindowTitle(tr("Текстовая лаборатория"));
     setMinimumSize(1040, 700);
@@ -229,8 +235,19 @@ MainWindow::MainWindow(QWidget *parent, const std::string &path)
 
     if (!path.empty()) setDocument(QString::fromStdString(path));
     updateActiveKey(loadKeys());
+
+    connect(controller, &ApplicationController::analysisStarted, this, &MainWindow::onAnalysisStarted);
+    connect(controller, &ApplicationController::progressChanged, this, &MainWindow::onProgressChanged);
+    connect(controller, &ApplicationController::chunkCompleted, this, &MainWindow::onChunkCompleted);
+    connect(controller, &ApplicationController::issueFound, this, &MainWindow::onIssueFound);
+    connect(controller, &ApplicationController::chunkFailed, this, &MainWindow::onChunkFailed);
+    connect(controller, &ApplicationController::analysisFinished, this, &MainWindow::onAnalysisFinished);
+    connect(controller, &ApplicationController::analysisFailed, this, &MainWindow::onAnalysisFailed);
+
     updateRequirements();
 }
+
+MainWindow::~MainWindow() = default;
 
 void MainWindow::chooseDocument()
 {
@@ -280,6 +297,16 @@ void MainWindow::setDocument(const QString &filePath)
 
 void MainWindow::startReview()
 {
+    if (!controller) {
+        QMessageBox::warning(this, tr("Анализ недоступен"),
+                             tr("Модуль анализа не инициализирован."));
+        return;
+    }
+    if (controller->isRunning()) {
+        controller->cancel();
+        return;
+    }
+
     const QFileInfo info(documentPath);
     if (documentPath.isEmpty() || !info.isFile() || !info.isReadable()) {
         documentPath.clear();
@@ -290,17 +317,89 @@ void MainWindow::startReview()
                              tr("Файл документа больше недоступен. Выберите файл заново."));
         return;
     }
-    if (apiKey.isEmpty()) {
-        updateRequirements();
-        QMessageBox::warning(this, tr("Нет API-ключа"), tr("Выберите API-ключ через «Настроить ИИ»."));
-        return;
-    }
 
+    const QString model = modelComboBox->currentText();
+    const QString baseUrl = QStringLiteral("http://127.0.0.1:11434");
+    setControlsRunning(true);
     progressBar->show();
-    progressBar->setValue(100);
-    setStatus(tr("Проверка завершена"), "statusDone");
-    reviewSummaryLabel->setText(tr("Готово: просмотрите рекомендации в области предпросмотра."));
-    previewText->setText(tr("Проверка завершена\n\n1. Просмотрите переходы между разделами — убедитесь, что каждый вывод опирается на приведённые аргументы.\n\n2. Перечитайте длинные предложения: если мысль можно выразить проще, уточните её собственными словами.\n\n3. Сверьте цитаты и список литературы с исходными источниками.\n\nЭто рабочий список ориентиров, а не автоматическое изменение документа."));
+    progressBar->setValue(0);
+    statusLabel->setText(tr("Анализ…"));
+    previewText->clear();
+    controller->startAnalysis(documentPath, model, baseUrl);
+}
+
+void MainWindow::onAnalysisStarted(int totalChunks)
+{
+    progressBar->setRange(0, qMax(1, totalChunks));
+    progressBar->setValue(0);
+    statusLabel->setText(tr("Анализ…"));
+    reviewSummaryLabel->setText(tr("Обрабатываем %1 фрагмент(ов)…").arg(totalChunks));
+}
+
+void MainWindow::onProgressChanged(int current, int total)
+{
+    Q_UNUSED(total);
+    progressBar->setValue(current);
+}
+
+void MainWindow::onChunkCompleted(int chunkIndex)
+{
+    Q_UNUSED(chunkIndex);
+}
+
+void MainWindow::onIssueFound(const Issue &issue)
+{
+    QString text = previewText->toPlainText();
+    const QString prefix = QStringLiteral("• [%1] %2\n");
+    const QString severity = issue.severity == Severity::High ? QStringLiteral("!")
+        : issue.severity == Severity::Medium ? QStringLiteral("~")
+        : QStringLiteral("·");
+    text.append(prefix.arg(severity, issue.recommendation));
+    previewText->setText(text);
+}
+
+void MainWindow::onChunkFailed(int chunkIndex, const QString &message)
+{
+    QString text = previewText->toPlainText();
+    text.append(tr("\n[chunk %1] ошибка: %2\n").arg(chunkIndex).arg(message));
+    previewText->setText(text);
+}
+
+void MainWindow::onAnalysisFinished(const AnalysisResult &result)
+{
+    setControlsRunning(false);
+    progressBar->setValue(progressBar->maximum());
+    statusLabel->setText(result.cancelled ? tr("Отменено") : tr("Проверка завершена"));
+    reviewSummaryLabel->setText(tr("Найдено рекомендаций: %1, ошибок фрагментов: %2.")
+        .arg(result.issues.size()).arg(result.errors.size()));
+    if (previewText->toPlainText().isEmpty()) {
+        previewText->setText(tr("Рекомендации не найдены."));
+    }
+}
+
+void MainWindow::onAnalysisFailed(const QString &message)
+{
+    setControlsRunning(false);
+    progressBar->hide();
+    statusLabel->setText(tr("Ошибка"));
+    reviewSummaryLabel->setText(message);
+    previewText->setText(message);
+    QMessageBox::warning(this, tr("Ошибка анализа"), message);
+}
+
+void MainWindow::setControlsRunning(bool running)
+{
+    selectButton->setEnabled(!running);
+    reviewButton->setEnabled(!documentPath.isEmpty()); // Кнопка доступна всегда при наличии документа
+    reviewButton->setText(running ? tr("Отмена") : tr("Запустить проверку"));
+}
+
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    if (controller && controller->isRunning()) {
+        controller->cancel();
+    }
+    QMainWindow::closeEvent(event);
 }
 
 void MainWindow::configureApiKey()
@@ -455,7 +554,7 @@ void MainWindow::updateRequirements()
 {
     const bool hasDocument = !documentPath.isEmpty();
     const bool hasApiKey = !apiKey.isEmpty();
-    reviewButton->setEnabled(hasDocument && hasApiKey);
+    reviewButton->setEnabled(hasDocument);
 
     fileRequirementButton->setVisible(!hasDocument);
     keyRequirementButton->setVisible(!hasApiKey);

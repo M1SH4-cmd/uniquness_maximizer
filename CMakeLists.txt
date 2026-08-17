@@ -17,6 +17,7 @@ set(PROJECT_SOURCES
         src/main.cpp
         src/mainwindow.cpp
         src/maximizer.cpp
+        src/core/application_controller.cpp
         src/core/document.cpp
         src/document/docx_reader.cpp
         src/document/document_chunker.cpp
@@ -28,6 +29,7 @@ set(PROJECT_SOURCES
         #headers:
         include/mainwindow.h
         include/maximizer.h
+        include/core/application_controller.h
         include/core/document.h
         include/core/document_chunk.h
         include/document/docx_reader.h

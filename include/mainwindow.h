@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QCloseEvent>
 #include <QList>
 #include <QStringList>
 #include <string>
@@ -21,18 +22,33 @@ struct ApiKeyEntry {
     bool selected = false;
 };
 
+class ApplicationController;
+struct AnalysisResult;
+struct Issue;
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
     explicit MainWindow(QWidget *parent = nullptr, const std::string &path = "");
-    ~MainWindow() override = default;
+    ~MainWindow() override;
 
 private slots:
     void chooseDocument();
     void startReview();
     void configureApiKey();
+
+    void onAnalysisStarted(int totalChunks);
+    void onProgressChanged(int current, int total);
+    void onChunkCompleted(int chunkIndex);
+    void onIssueFound(const Issue &issue);
+    void onChunkFailed(int chunkIndex, const QString &message);
+    void onAnalysisFinished(const AnalysisResult &result);
+    void onAnalysisFailed(const QString &message);
+
+protected:
+    void closeEvent(QCloseEvent *event) override;
 
 private:
     void setDocument(const QString &filePath);
@@ -44,6 +60,9 @@ private:
     bool removeKey(const QString &id, QString *errorMessage = nullptr) const;
     void selectKey(const QString &id);
     void updateActiveKey(const QList<ApiKeyEntry> &entries);
+    void setControlsRunning(bool running);
+
+    ApplicationController *controller = nullptr;
 
     QString documentPath;
     QString apiKey;

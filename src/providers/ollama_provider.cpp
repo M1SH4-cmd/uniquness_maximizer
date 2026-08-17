@@ -216,3 +216,12 @@ void OllamaProvider::handleReplyFinished(QNetworkReply *reply)
     m_pending.erase(callbackIt);
     callback(reply);
 }
+
+void OllamaProvider::cancelAll()
+{
+    for (auto it = m_pending.begin(); it != m_pending.end(); ) {
+        QNetworkReply *reply = it.key();
+        ++it; // Increment before potential removal to avoid iterator invalidation
+        reply->abort();
+    }
+}

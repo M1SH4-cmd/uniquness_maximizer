@@ -28,6 +28,7 @@ public:
 
     void checkAvailability(std::function<void(bool available, const QString &errorMessage)> callback);
     void fetchAvailableModels(std::function<void(QStringList models, const QString &errorMessage)> callback);
+    void cancelAll();
 
     QString baseUrl() const;
     void setBaseUrl(const QString &url);
