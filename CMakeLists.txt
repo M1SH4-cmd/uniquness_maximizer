@@ -18,6 +18,7 @@ set(PROJECT_SOURCES
         src/mainwindow.cpp
         src/maximizer.cpp
         src/core/document.cpp
+        src/core/json_utils.cpp
         src/document/docx_reader.cpp
         src/document/document_chunker.cpp
         src/analysis/prompt_builder.cpp
@@ -30,6 +31,7 @@ set(PROJECT_SOURCES
         include/maximizer.h
         include/core/document.h
         include/core/document_chunk.h
+        include/core/json_utils.h
         include/document/docx_reader.h
         include/document/document_chunker.h
         include/core/ai_types.h
@@ -134,95 +136,75 @@ add_custom_command(TARGET uniquness_maximizer POST_BUILD
 
 include(CTest)
 if(BUILD_TESTING)
-    add_executable(docx_reader_test
-        tests/docx_reader_test.cpp
-        src/core/document.cpp
-        src/document/docx_reader.cpp
-        lib/pugixml/pugixml.cpp
-    )
-    target_link_libraries(docx_reader_test PRIVATE
-        Qt${QT_VERSION_MAJOR}::Core
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/lib/zip.lib
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/lib/zlib.lib
-    )
-    target_include_directories(docx_reader_test PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/pugixml
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/include
-    )
-    add_test(NAME docx_reader_test COMMAND docx_reader_test)
+    # Each test is an executable built from tests/<name>.cpp plus the production
+    # sources it exercises, linked against Qt Core and the shared test support headers.
+    function(add_project_test name)
+        cmake_parse_arguments(TEST "" "" "SOURCES;LIBRARIES;INCLUDE_DIRS" ${ARGN})
+        add_executable(${name} tests/${name}.cpp ${TEST_SOURCES})
+        target_link_libraries(${name} PRIVATE Qt${QT_VERSION_MAJOR}::Core ${TEST_LIBRARIES})
+        target_include_directories(${name} PRIVATE
+            ${CMAKE_CURRENT_SOURCE_DIR}/include
+            ${CMAKE_CURRENT_SOURCE_DIR}/tests/support
+            ${TEST_INCLUDE_DIRS}
+        )
+        add_test(NAME ${name} COMMAND ${name})
+    endfunction()
 
-    add_executable(document_chunker_test
-        tests/document_chunker_test.cpp
-        src/core/document.cpp
-        src/document/document_chunker.cpp
+    add_project_test(docx_reader_test
+        SOURCES
+            src/core/document.cpp
+            src/document/docx_reader.cpp
+            lib/pugixml/pugixml.cpp
+        LIBRARIES
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/lib/zip.lib
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/lib/zlib.lib
+        INCLUDE_DIRS
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/pugixml
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/libzip/include
+            ${CMAKE_CURRENT_SOURCE_DIR}/lib/zlib/include
     )
-    target_link_libraries(document_chunker_test PRIVATE
-        Qt${QT_VERSION_MAJOR}::Core
-    )
-    target_include_directories(document_chunker_test PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-    )
-    add_test(NAME document_chunker_test COMMAND document_chunker_test)
 
-    add_executable(analysis_contract_test
-        tests/analysis_contract_test.cpp
-        src/analysis/prompt_builder.cpp
-        src/analysis/response_parser.cpp
+    add_project_test(document_chunker_test
+        SOURCES
+            src/core/document.cpp
+            src/document/document_chunker.cpp
     )
-    target_link_libraries(analysis_contract_test PRIVATE
-        Qt${QT_VERSION_MAJOR}::Core
-    )
-    target_include_directories(analysis_contract_test PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-    )
-    add_test(NAME analysis_contract_test COMMAND analysis_contract_test)
 
-    add_executable(analysis_engine_test
-        tests/analysis_engine_test.cpp
-        src/core/document.cpp
-        src/document/document_chunker.cpp
-        src/analysis/prompt_builder.cpp
-        src/analysis/response_parser.cpp
-        src/analysis/analysis_engine.cpp
-        include/analysis/analysis_engine.h
+    add_project_test(analysis_contract_test
+        SOURCES
+            src/core/json_utils.cpp
+            src/analysis/prompt_builder.cpp
+            src/analysis/response_parser.cpp
     )
-    target_link_libraries(analysis_engine_test PRIVATE
-        Qt${QT_VERSION_MAJOR}::Core
-    )
-    target_include_directories(analysis_engine_test PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-    )
-    add_test(NAME analysis_engine_test COMMAND analysis_engine_test)
 
-    add_executable(ollama_provider_test
-        tests/ollama_provider_test.cpp
-        src/providers/ollama_provider.cpp
-        include/providers/ollama_provider.h
+    add_project_test(analysis_engine_test
+        SOURCES
+            src/core/document.cpp
+            src/core/json_utils.cpp
+            src/document/document_chunker.cpp
+            src/analysis/prompt_builder.cpp
+            src/analysis/response_parser.cpp
+            src/analysis/analysis_engine.cpp
+            include/analysis/analysis_engine.h
     )
-    target_link_libraries(ollama_provider_test PRIVATE
-        Qt${QT_VERSION_MAJOR}::Core
-        Qt${QT_VERSION_MAJOR}::Network
-    )
-    target_include_directories(ollama_provider_test PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-    )
-    add_test(NAME ollama_provider_test COMMAND ollama_provider_test)
 
-    add_executable(ollama_integration_test
-        tests/ollama_integration_test.cpp
-        src/providers/ollama_provider.cpp
-        include/providers/ollama_provider.h
-        src/analysis/prompt_builder.cpp
-        src/analysis/response_parser.cpp
+    add_project_test(ollama_provider_test
+        SOURCES
+            src/core/json_utils.cpp
+            src/providers/ollama_provider.cpp
+            include/providers/ollama_provider.h
+        LIBRARIES
+            Qt${QT_VERSION_MAJOR}::Network
     )
-    target_link_libraries(ollama_integration_test PRIVATE
-        Qt${QT_VERSION_MAJOR}::Core
-        Qt${QT_VERSION_MAJOR}::Network
+
+    add_project_test(ollama_integration_test
+        SOURCES
+            src/core/json_utils.cpp
+            src/providers/ollama_provider.cpp
+            include/providers/ollama_provider.h
+            src/analysis/prompt_builder.cpp
+            src/analysis/response_parser.cpp
+        LIBRARIES
+            Qt${QT_VERSION_MAJOR}::Network
     )
-    target_include_directories(ollama_integration_test PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-    )
-    add_test(NAME ollama_integration_test COMMAND ollama_integration_test)
 endif()

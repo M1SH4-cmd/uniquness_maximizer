@@ -1,10 +1,10 @@
 #include "providers/ollama_provider.h"
 
+#include "core/json_utils.h"
+
 #include <QJsonArray>
-#include <QJsonDocument>
 #include <QJsonObject>
 #include <QNetworkReply>
-#include <QNetworkRequest>
 #include <QUrl>
 
 #include <utility>
@@ -13,15 +13,24 @@ namespace {
 const QString kGeneratePath = QStringLiteral("/api/generate");
 const QString kVersionPath = QStringLiteral("/api/version");
 const QString kTagsPath = QStringLiteral("/api/tags");
+
+QString withoutTrailingSlashes(QString url)
+{
+    while (url.endsWith(QLatin1Char('/'))) url.chop(1);
+    return url;
+}
+
+int clampTimeout(int ms)
+{
+    return ms < 1 ? 1 : ms;
+}
 }
 
 OllamaProvider::OllamaProvider(QString baseUrl, int timeoutMs, QObject *parent)
     : QObject(parent),
-      m_baseUrl(std::move(baseUrl)),
-      m_timeoutMs(timeoutMs)
+      m_baseUrl(withoutTrailingSlashes(std::move(baseUrl))),
+      m_timeoutMs(clampTimeout(timeoutMs))
 {
-    while (m_baseUrl.endsWith(QLatin1Char('/'))) m_baseUrl.chop(1);
-    if (m_timeoutMs < 1) m_timeoutMs = 1;
 }
 
 void OllamaProvider::analyze(const AIRequest &request, std::function<void(AIResponse)> callback)
@@ -31,13 +40,10 @@ void OllamaProvider::analyze(const AIRequest &request, std::function<void(AIResp
         return;
     }
 
-    const QByteArray body = buildRequestBody(request);
-    QNetworkRequest networkRequest(QUrl(m_baseUrl + kGeneratePath));
+    QNetworkRequest networkRequest = buildRequest(kGeneratePath);
     networkRequest.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
-    networkRequest.setTransferTimeout(m_timeoutMs);
 
-    QNetworkReply *reply = m_network.post(networkRequest, body);
-    m_pending.insert(reply, [callback](QNetworkReply *finishedReply) {
+    trackReply(m_network.post(networkRequest, buildRequestBody(request)), [callback](QNetworkReply *finishedReply) {
         const QByteArray data = finishedReply->readAll();
         const int statusCode = finishedReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
         AIResponse response;
@@ -61,45 +67,33 @@ void OllamaProvider::analyze(const AIRequest &request, std::function<void(AIResp
         finishedReply->deleteLater();
         callback(std::move(response));
     });
-    connect(reply, &QNetworkReply::finished, this, [this, reply]() { handleReplyFinished(reply); });
 }
 
 QString OllamaProvider::providerName() const { return QStringLiteral("Ollama"); }
 
 void OllamaProvider::checkAvailability(std::function<void(bool available, const QString &errorMessage)> callback)
 {
-    QNetworkRequest networkRequest(QUrl(m_baseUrl + kVersionPath));
-    networkRequest.setTransferTimeout(m_timeoutMs);
-
-    QNetworkReply *reply = m_network.get(networkRequest);
-    m_pending.insert(reply, [callback](QNetworkReply *finishedReply) {
+    trackReply(m_network.get(buildRequest(kVersionPath)), [callback](QNetworkReply *finishedReply) {
         finishedReply->readAll();
-        const bool available = finishedReply->error() == QNetworkReply::NoError
-                               && finishedReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() == 200;
+        const bool available = isSuccessfulReply(finishedReply);
         const QString error = available ? QString() : finishedReply->errorString();
         finishedReply->deleteLater();
         callback(available, error);
     });
-    connect(reply, &QNetworkReply::finished, this, [this, reply]() { handleReplyFinished(reply); });
 }
 
 void OllamaProvider::fetchAvailableModels(std::function<void(QStringList models, const QString &errorMessage)> callback)
 {
-    QNetworkRequest networkRequest(QUrl(m_baseUrl + kTagsPath));
-    networkRequest.setTransferTimeout(m_timeoutMs);
-
-    QNetworkReply *reply = m_network.get(networkRequest);
-    m_pending.insert(reply, [callback](QNetworkReply *finishedReply) {
+    trackReply(m_network.get(buildRequest(kTagsPath)), [callback](QNetworkReply *finishedReply) {
         const QByteArray data = finishedReply->readAll();
         QStringList models;
         QString error;
-        const bool ok = finishedReply->error() == QNetworkReply::NoError
-                        && finishedReply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() == 200;
-        if (ok) {
-            QJsonParseError parseError;
-            const QJsonDocument document = QJsonDocument::fromJson(data, &parseError);
-            if (parseError.error == QJsonParseError::NoError && document.isObject()) {
-                const QJsonArray names = document.object().value(QStringLiteral("models")).toArray();
+        if (!isSuccessfulReply(finishedReply)) {
+            error = finishedReply->errorString();
+        } else {
+            QJsonObject object;
+            if (JsonUtils::parseObject(data, object)) {
+                const QJsonArray names = object.value(QStringLiteral("models")).toArray();
                 for (const QJsonValue &value : names) {
                     if (value.isObject()) {
                         const QString name = value.toObject().value(QStringLiteral("name")).toString();
@@ -109,29 +103,43 @@ void OllamaProvider::fetchAvailableModels(std::function<void(QStringList models,
             } else {
                 error = QStringLiteral("Ollama вернула некорректный ответ /api/tags.");
             }
-        } else {
-            error = finishedReply->errorString();
         }
         finishedReply->deleteLater();
         callback(models, error);
     });
-    connect(reply, &QNetworkReply::finished, this, [this, reply]() { handleReplyFinished(reply); });
 }
 
 QString OllamaProvider::baseUrl() const { return m_baseUrl; }
 
 void OllamaProvider::setBaseUrl(const QString &url)
 {
-    m_baseUrl = url;
-    while (m_baseUrl.endsWith(QLatin1Char('/'))) m_baseUrl.chop(1);
+    m_baseUrl = withoutTrailingSlashes(url);
 }
 
 int OllamaProvider::timeoutMs() const { return m_timeoutMs; }
 
 void OllamaProvider::setTimeoutMs(int ms)
 {
-    if (ms < 1) ms = 1;
-    m_timeoutMs = ms;
+    m_timeoutMs = clampTimeout(ms);
+}
+
+QNetworkRequest OllamaProvider::buildRequest(const QString &path) const
+{
+    QNetworkRequest request(QUrl(m_baseUrl + path));
+    request.setTransferTimeout(m_timeoutMs);
+    return request;
+}
+
+void OllamaProvider::trackReply(QNetworkReply *reply, std::function<void(QNetworkReply *)> handler)
+{
+    m_pending.insert(reply, std::move(handler));
+    connect(reply, &QNetworkReply::finished, this, [this, reply]() { handleReplyFinished(reply); });
+}
+
+bool OllamaProvider::isSuccessfulReply(QNetworkReply *reply)
+{
+    return reply->error() == QNetworkReply::NoError
+           && reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt() == 200;
 }
 
 QByteArray OllamaProvider::buildRequestBody(const AIRequest &request)
@@ -147,25 +155,23 @@ QByteArray OllamaProvider::buildRequestBody(const AIRequest &request)
     object.insert(QStringLiteral("format"), QStringLiteral("json"));
     object.insert(QStringLiteral("options"), options);
 
-    return QJsonDocument(object).toJson(QJsonDocument::Compact);
+    return JsonUtils::toCompactJson(object);
 }
 
 QString OllamaProvider::parseResponseText(const QByteArray &body)
 {
-    QJsonParseError parseError;
-    const QJsonDocument document = QJsonDocument::fromJson(body, &parseError);
-    if (parseError.error != QJsonParseError::NoError || !document.isObject()) return {};
-    const QJsonValue response = document.object().value(QStringLiteral("response"));
+    QJsonObject object;
+    if (!JsonUtils::parseObject(body, object)) return {};
+    const QJsonValue response = object.value(QStringLiteral("response"));
     if (!response.isString()) return {};
     return response.toString().trimmed();
 }
 
 QString OllamaProvider::parseOllamaError(const QByteArray &body)
 {
-    QJsonParseError parseError;
-    const QJsonDocument document = QJsonDocument::fromJson(body, &parseError);
-    if (parseError.error == QJsonParseError::NoError && document.isObject()) {
-        const QJsonValue error = document.object().value(QStringLiteral("error"));
+    QJsonObject object;
+    if (JsonUtils::parseObject(body, object)) {
+        const QJsonValue error = object.value(QStringLiteral("error"));
         if (error.isString()) return error.toString();
     }
     return QString::fromUtf8(body).trimmed();

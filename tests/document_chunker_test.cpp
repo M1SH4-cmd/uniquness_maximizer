@@ -1,27 +1,12 @@
 #include "document/document_chunker.h"
 
-#include <QCoreApplication>
-#include <QTextStream>
-
-#include <utility>
+#include "test_fixtures.h"
+#include "test_support.h"
 
 namespace {
-Paragraph paragraph(const QString &id, const QString &text, int index, int section = 0)
-{
-    return {id, text, index, section, {}};
-}
-
-Document document(QVector<Paragraph> paragraphs)
-{
-    return {QStringLiteral("fixture.docx"), QStringLiteral("Fixture"), std::move(paragraphs)};
-}
-
-bool require(bool condition, const QString &message)
-{
-    if (condition) return true;
-    QTextStream(stderr) << message << Qt::endl;
-    return false;
-}
+using TestFixtures::document;
+using TestFixtures::paragraph;
+using TestSupport::require;
 
 bool testSimpleDocument()
 {
@@ -69,8 +54,4 @@ bool testBlankParagraphs()
 }
 }
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication application(argc, argv);
-    return testSimpleDocument() && testSizeLimit() && testSectionBoundary() && testLongParagraph() && testBlankParagraphs() ? 0 : 1;
-}
+TEST_SUPPORT_MAIN(testSimpleDocument, testSizeLimit, testSectionBoundary, testLongParagraph, testBlankParagraphs)

@@ -1,22 +1,16 @@
 #include "analysis/prompt_builder.h"
 #include "analysis/response_parser.h"
 
-#include <QCoreApplication>
-#include <QTextStream>
+#include "test_fixtures.h"
+#include "test_support.h"
 
 namespace {
+using TestSupport::require;
+
 DocumentChunk fixtureChunk()
 {
-    return {"C001", 0, 2, {"P001", "P002", "P003"},
-            {{"P001", "Первый текст."}, {"P002", "Исходный текст"}, {"P003", "Третий текст."}},
-            "Первый текст.\n\nИсходный текст\n\nТретий текст."};
-}
-
-bool require(bool condition, const QString &message)
-{
-    if (condition) return true;
-    QTextStream(stderr) << message << Qt::endl;
-    return false;
+    return TestFixtures::chunk(QStringLiteral("C001"), 0, 2,
+                               {{"P001", "Первый текст."}, {"P002", "Исходный текст"}, {"P003", "Третий текст."}});
 }
 
 QString issueJson(const QString &overrides = {})
@@ -93,9 +87,5 @@ bool testPromptBuilder()
 }
 }
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication application(argc, argv);
-    return testValidJson() && testEmptyIssues() && testInvalidResponses() && testEnumAndParagraphValidation()
-           && testRequiredFieldsAndConfidence() && testPromptBuilder() ? 0 : 1;
-}
+TEST_SUPPORT_MAIN(testValidJson, testEmptyIssues, testInvalidResponses, testEnumAndParagraphValidation,
+                  testRequiredFieldsAndConfidence, testPromptBuilder)
