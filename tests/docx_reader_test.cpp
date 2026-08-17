@@ -1,14 +1,16 @@
 #include "document/docx_reader.h"
 
-#include <QCoreApplication>
+#include "test_support.h"
+
 #include <QDir>
 #include <QFile>
 #include <QTemporaryDir>
-#include <QTextStream>
 
 #include <zip.h>
 
 namespace {
+using TestSupport::fail;
+
 bool addEntry(zip_t *archive, const char *name, const QByteArray &data)
 {
     zip_source_t *source = zip_source_buffer(archive, data.constData(), static_cast<zip_uint64_t>(data.size()), 0);
@@ -27,11 +29,6 @@ bool createFixture(const QString &path)
     return added && zip_close(archive) == 0;
 }
 
-int fail(const QString &message)
-{
-    QTextStream(stderr) << message << Qt::endl;
-    return 1;
-}
 }
 
 int main(int argc, char *argv[])

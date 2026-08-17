@@ -1,9 +1,9 @@
 #include "analysis/analysis_engine.h"
 #include "providers/ai_provider.h"
 
-#include <QCoreApplication>
-#include <QEventLoop>
-#include <QTextStream>
+#include "async_test_support.h"
+#include "test_fixtures.h"
+#include "test_support.h"
 
 class MockAIProvider final : public AIProvider
 {
@@ -36,29 +36,27 @@ private:
 };
 
 namespace {
-bool require(bool condition, const QString &message)
-{
-    if (condition) return true;
-    QTextStream(stderr) << message << Qt::endl;
-    return false;
-}
+using TestSupport::require;
+
+constexpr int kAnalysisTimeoutMs = 15000;
 
 Document fixtureDocument()
 {
-    return {QStringLiteral("fixture.docx"), QStringLiteral("Fixture"),
-            {{"P001", "Первый текст.", 0, 0, {}}, {"P002", "Второй текст.", 1, 1, {}}, {"P003", "Третий текст.", 2, 2, {}}}};
+    return TestFixtures::document({TestFixtures::paragraph("P001", "Первый текст.", 0, 0),
+                                   TestFixtures::paragraph("P002", "Второй текст.", 1, 1),
+                                   TestFixtures::paragraph("P003", "Третий текст.", 2, 2)});
 }
 
 AnalysisResult run(AnalysisEngine &engine, MockAIProvider &provider)
 {
-    QEventLoop loop;
     AnalysisResult result;
-    QObject::connect(&engine, &AnalysisEngine::analysisFinished, &loop, [&result, &loop](const AnalysisResult &finished) {
-        result = finished;
-        loop.quit();
+    TestSupport::awaitCallback(kAnalysisTimeoutMs, [&](const std::function<void()> &done) {
+        QObject::connect(&engine, &AnalysisEngine::analysisFinished, &engine, [&result, done](const AnalysisResult &finished) {
+            result = finished;
+            done();
+        });
+        engine.start(fixtureDocument(), provider, QStringLiteral("mock-model"));
     });
-    engine.start(fixtureDocument(), provider, QStringLiteral("mock-model"));
-    loop.exec();
     return result;
 }
 
@@ -97,8 +95,4 @@ bool testPartialParseFailure()
 }
 }
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication application(argc, argv);
-    return testSuccessfulOrchestration() && testPartialProviderFailure() && testPartialParseFailure() ? 0 : 1;
-}
+TEST_SUPPORT_MAIN(testSuccessfulOrchestration, testPartialProviderFailure, testPartialParseFailure)

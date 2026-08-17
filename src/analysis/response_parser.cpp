@@ -1,7 +1,8 @@
 #include "analysis/response_parser.h"
 
+#include "core/json_utils.h"
+
 #include <QJsonArray>
-#include <QJsonDocument>
 #include <QJsonObject>
 #include <QHash>
 #include <QSet>
@@ -42,13 +43,13 @@ ParseResult ResponseParser::parse(const QString &json, const DocumentChunk &chun
         parsed.errorMessage = QStringLiteral("Ответ модели пуст.");
         return parsed;
     }
-    QJsonParseError parseError;
-    const QJsonDocument document = QJsonDocument::fromJson(json.toUtf8(), &parseError);
-    if (parseError.error != QJsonParseError::NoError || !document.isObject()) {
-        parsed.errorMessage = QStringLiteral("Ответ модели содержит некорректный JSON: %1.").arg(parseError.errorString());
+    QJsonObject root;
+    QString jsonError;
+    if (!JsonUtils::parseObject(json, root, &jsonError)) {
+        parsed.errorMessage = QStringLiteral("Ответ модели содержит некорректный JSON: %1.").arg(jsonError);
         return parsed;
     }
-    const QJsonValue issuesValue = document.object().value(QStringLiteral("issues"));
+    const QJsonValue issuesValue = root.value(QStringLiteral("issues"));
     if (!issuesValue.isArray()) {
         parsed.errorMessage = QStringLiteral("Корневой объект должен содержать массив 'issues'.");
         return parsed;

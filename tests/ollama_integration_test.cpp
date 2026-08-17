@@ -2,47 +2,29 @@
 #include "analysis/response_parser.h"
 #include "providers/ollama_provider.h"
 
-#include <QCoreApplication>
-#include <QEventLoop>
-#include <QTextStream>
-#include <QTimer>
+#include "async_test_support.h"
+#include "test_fixtures.h"
+#include "test_support.h"
 
-#include <utility>
+#include <QTextStream>
 
 namespace {
+using TestSupport::require;
+using TestSupport::runAnalyze;
+
 const char kEnableEnv[] = "OLLAMA_INTEGRATION_TESTS";
 const char kModelEnv[] = "OLLAMA_MODEL";
 const char kBaseUrlEnv[] = "OLLAMA_BASE_URL";
 const char kDefaultModel[] = "qwen2.5:3b";
 const char kDefaultBaseUrl[] = "http://127.0.0.1:11434";
-
-bool require(bool condition, const QString &message)
-{
-    if (condition) return true;
-    QTextStream(stderr) << message << Qt::endl;
-    return false;
-}
+constexpr int kProbeTimeoutMs = 15000;
+constexpr int kAnalyzeTimeoutMs = 300000;
 
 DocumentChunk fixtureChunk()
 {
-    return {"C001", 0, 2,
-            {"P001", "P002"},
-            {{"P001", "Современная политическая система полностью зависит от цифровых технологий."},
-             {"P002", "Безусловно, сегодня абсолютно все процессы в обществе цифровизируются."}},
-            QString()};
-}
-
-AIResponse runAnalyze(OllamaProvider &provider, const AIRequest &request, int timeoutMs = 300000)
-{
-    QEventLoop loop;
-    AIResponse response;
-    provider.analyze(request, [&](AIResponse result) {
-        response = result;
-        loop.quit();
-    });
-    QTimer::singleShot(timeoutMs, &loop, &QEventLoop::quit);
-    loop.exec();
-    return response;
+    return TestFixtures::chunk(QStringLiteral("C001"), 0, 2,
+                               {{"P001", "Современная политическая система полностью зависит от цифровых технологий."},
+                                {"P002", "Безусловно, сегодня абсолютно все процессы в обществе цифровизируются."}});
 }
 }
 
@@ -62,16 +44,15 @@ int main(int argc, char *argv[])
 
     OllamaProvider provider(baseUrl, 300000);
 
-    QEventLoop loop;
     bool available = false;
     QString availabilityError;
-    provider.checkAvailability([&](bool ok, const QString &error) {
-        available = ok;
-        availabilityError = error;
-        loop.quit();
+    TestSupport::awaitCallback(kProbeTimeoutMs, [&](const std::function<void()> &done) {
+        provider.checkAvailability([&available, &availabilityError, done](bool ok, const QString &error) {
+            available = ok;
+            availabilityError = error;
+            done();
+        });
     });
-    QTimer::singleShot(15000, &loop, &QEventLoop::quit);
-    loop.exec();
     if (!available) {
         out << "SKIPPED: Ollama недоступна (" << availabilityError << ")." << Qt::endl;
         return 0;
@@ -79,14 +60,13 @@ int main(int argc, char *argv[])
 
     QStringList models;
     QString modelsError;
-    QEventLoop modelsLoop;
-    provider.fetchAvailableModels([&](QStringList names, const QString &error) {
-        models = names;
-        modelsError = error;
-        modelsLoop.quit();
+    TestSupport::awaitCallback(kProbeTimeoutMs, [&](const std::function<void()> &done) {
+        provider.fetchAvailableModels([&models, &modelsError, done](QStringList names, const QString &error) {
+            models = names;
+            modelsError = error;
+            done();
+        });
     });
-    QTimer::singleShot(15000, &modelsLoop, &QEventLoop::quit);
-    modelsLoop.exec();
     if (!models.contains(model)) {
         out << "SKIPPED: модель '" << model << "' не установлена. Доступные: " << models.join(QStringLiteral(", ")) << Qt::endl;
         return 0;
@@ -96,7 +76,7 @@ int main(int argc, char *argv[])
     const DocumentChunk chunk = fixtureChunk();
     const AIRequest request{builder.buildSystemPrompt(), builder.buildAnalysisPrompt(chunk), model, 0.2};
 
-    const AIResponse aiResponse = runAnalyze(provider, request);
+    const AIResponse aiResponse = runAnalyze(provider, request, kAnalyzeTimeoutMs);
     if (!require(aiResponse.success, QStringLiteral("integration: провайдер не вернул ответ: %1").arg(aiResponse.errorMessage))) return 1;
 
     const ParseResult parsed = ResponseParser().parse(aiResponse.rawText, chunk);

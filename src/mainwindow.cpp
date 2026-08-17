@@ -2,6 +2,7 @@
 
 #include "core/application_controller.h"
 #include "core/analysis_types.h"
+#include "core/json_utils.h"
 
 #include <QCloseEvent>
 #include <QFileDialog>
@@ -21,7 +22,6 @@
 #include <QStackedWidget>
 #include <QStyle>
 #include <QTextEdit>
-#include <QJsonDocument>
 #include <QJsonObject>
 #include <QSaveFile>
 #include <QSignalBlocker>
@@ -30,6 +30,13 @@
 #include <QMessageBox>
 
 namespace {
+void applyObjectName(QWidget *widget, const QString &name)
+{
+    widget->setObjectName(name);
+    widget->style()->unpolish(widget);
+    widget->style()->polish(widget);
+}
+
 QFrame *card(QWidget *parent)
 {
     auto *frame = new QFrame(parent);
@@ -254,9 +261,7 @@ void MainWindow::setDocument(const QString &filePath)
     documentNameLabel->setText(info.fileName());
     documentMetaLabel->setText(tr("%1 · %2 КБ").arg(info.suffix().toUpper()).arg(qMax<qint64>(1, info.size() / 1024)));
     statusLabel->setText(tr("Файл готов"));
-    statusLabel->setObjectName("statusReady");
-    statusLabel->style()->unpolish(statusLabel);
-    statusLabel->style()->polish(statusLabel);
+    applyObjectName(statusLabel, QStringLiteral("statusReady"));
     previewText->setText(tr("Документ «%1» готов к проверке.\n\nЗапустите анализ, чтобы получить ориентиры для самостоятельной доработки: структуру текста, ясность формулировок и оформление источников.").arg(info.fileName()));
     updateRequirements();
 }
@@ -497,21 +502,29 @@ void MainWindow::updateRequirements()
     keyRequirementButton->setText(tr("Добавьте API-ключ"));
 
     if (hasDocument && hasApiKey) {
-        requirementsPanel->setObjectName("requirementsReady");
+        applyObjectName(requirementsPanel, QStringLiteral("requirementsReady"));
         requirementsTitleLabel->setText(tr("✓ Всё готово к проверке"));
         reviewSummaryLabel->setText(tr("Документ и API-ключ подключены. Можно начинать."));
     } else {
-        requirementsPanel->setObjectName("requirementsPanel");
+        applyObjectName(requirementsPanel, QStringLiteral("requirementsPanel"));
         requirementsTitleLabel->setText(tr("Нужно завершить настройку"));
         reviewSummaryLabel->setText(tr("Выполните отмеченные требования, чтобы начать проверку."));
     }
-    requirementsPanel->style()->unpolish(requirementsPanel);
-    requirementsPanel->style()->polish(requirementsPanel);
 }
 
 QString MainWindow::keysDirectoryPath() const
 {
     return QDir(QCoreApplication::applicationDirPath()).filePath(QStringLiteral("keys"));
+}
+
+QString MainWindow::keyFilePath(const QString &id) const
+{
+    return QDir(keysDirectoryPath()).filePath(id + QStringLiteral(".json"));
+}
+
+QString MainWindow::keySummary(const QString &provider, const QString &key) const
+{
+    return tr("%1 · •••• %2").arg(provider, key.right(4));
 }
 
 QList<ApiKeyEntry> MainWindow::loadKeys() const
@@ -521,7 +534,8 @@ QList<ApiKeyEntry> MainWindow::loadKeys() const
     for (const QFileInfo &fileInfo : keysDir.entryInfoList({QStringLiteral("*.json")}, QDir::Files, QDir::Name)) {
         QFile file(fileInfo.absoluteFilePath());
         if (!file.open(QIODevice::ReadOnly)) continue;
-        const QJsonObject object = QJsonDocument::fromJson(file.readAll()).object();
+        QJsonObject object;
+        if (!JsonUtils::parseObject(file.readAll(), object)) continue;
         const QString id = object.value(QStringLiteral("id")).toString();
         const QString key = object.value(QStringLiteral("key")).toString();
         if (id.isEmpty() || key.isEmpty()) continue;
@@ -534,17 +548,17 @@ QList<ApiKeyEntry> MainWindow::loadKeys() const
 bool MainWindow::saveKey(const ApiKeyEntry &entry) const
 {
     QDir().mkpath(keysDirectoryPath());
-    QSaveFile file(QDir(keysDirectoryPath()).filePath(entry.id + QStringLiteral(".json")));
+    QSaveFile file(keyFilePath(entry.id));
     if (!file.open(QIODevice::WriteOnly)) return false;
     const QJsonObject object{{QStringLiteral("id"), entry.id}, {QStringLiteral("provider"), entry.provider},
                              {QStringLiteral("key"), entry.key}, {QStringLiteral("selected"), entry.selected}};
-    file.write(QJsonDocument(object).toJson(QJsonDocument::Compact));
+    file.write(JsonUtils::toCompactJson(object));
     return file.commit();
 }
 
 bool MainWindow::removeKey(const QString &id) const
 {
-    return QFile::remove(QDir(keysDirectoryPath()).filePath(id + QStringLiteral(".json")));
+    return QFile::remove(keyFilePath(id));
 }
 
 void MainWindow::selectKey(const QString &id)
@@ -570,9 +584,7 @@ void MainWindow::updateActiveKey(const QList<ApiKeyEntry> &entries)
             break;
         }
     }
-    apiStatusLabel->setText(apiKey.isEmpty()
-        ? tr("Ключ не выбран")
-        : tr("%1 · •••• %2").arg(activeProvider, apiKey.right(4)));
+    apiStatusLabel->setText(apiKey.isEmpty() ? tr("Ключ не выбран") : keySummary(activeProvider, apiKey));
 
     const QSignalBlocker comboBlocker(modelComboBox);
     modelComboBox->clear();
@@ -584,8 +596,7 @@ void MainWindow::updateActiveKey(const QList<ApiKeyEntry> &entries)
         modelComboBox->setEnabled(true);
         modelComboBox->setToolTip({});
         for (const ApiKeyEntry &entry : entries) {
-            const QString title = tr("%1 · •••• %2").arg(entry.provider, entry.key.right(4));
-            modelComboBox->addItem(title, entry.id);
+            modelComboBox->addItem(keySummary(entry.provider, entry.key), entry.id);
             if (entry.id == activeKeyId) modelComboBox->setCurrentIndex(modelComboBox->count() - 1);
         }
     }

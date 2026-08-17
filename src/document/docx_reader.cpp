@@ -39,10 +39,15 @@ QByteArray readZipEntry(zip_t *archive, const char *entryName, QString &error)
     return data;
 }
 
+bool nodeNameIs(const pugi::xml_node &node, const char *name)
+{
+    return QLatin1String(node.name()) == QLatin1String(name);
+}
+
 pugi::xml_node childByName(const pugi::xml_node &node, const char *name)
 {
     for (const pugi::xml_node &child : node.children()) {
-        if (QString::fromLatin1(child.name()) == QLatin1String(name)) return child;
+        if (nodeNameIs(child, name)) return child;
     }
     return {};
 }
@@ -59,16 +64,15 @@ QString attributeByName(const pugi::xml_node &node, const char *name)
 
 void appendText(const pugi::xml_node &node, QString &text)
 {
-    const QString name = QString::fromLatin1(node.name());
-    if (name == QLatin1String("w:t") || name == QLatin1String("w:delText")) {
+    if (nodeNameIs(node, "w:t") || nodeNameIs(node, "w:delText")) {
         text += QString::fromUtf8(node.text().as_string());
         return;
     }
-    if (name == QLatin1String("w:tab")) {
+    if (nodeNameIs(node, "w:tab")) {
         text += QLatin1Char('\t');
         return;
     }
-    if (name == QLatin1String("w:br") || name == QLatin1String("w:cr")) {
+    if (nodeNameIs(node, "w:br") || nodeNameIs(node, "w:cr")) {
         text += QLatin1Char('\n');
         return;
     }
@@ -119,7 +123,7 @@ Document DocxReader::read(const QString &path)
     }
 
     for (const pugi::xml_node &node : body.children()) {
-        if (QString::fromLatin1(node.name()) != QLatin1String("w:p")) continue;
+        if (!nodeNameIs(node, "w:p")) continue;
 
         const pugi::xml_node properties = childByName(node, "w:pPr");
         const pugi::xml_node styleNode = childByName(properties, "w:pStyle");

@@ -5,6 +5,7 @@
 
 #include <QHash>
 #include <QNetworkAccessManager>
+#include <QNetworkRequest>
 #include <QObject>
 #include <QString>
 #include <QStringList>
@@ -40,6 +41,9 @@ public:
     static QString parseOllamaError(const QByteArray &body);
 
 private:
+    QNetworkRequest buildRequest(const QString &path) const;
+    void trackReply(QNetworkReply *reply, std::function<void(QNetworkReply *)> handler);
+    static bool isSuccessfulReply(QNetworkReply *reply);
     void handleReplyFinished(QNetworkReply *reply);
 
     QNetworkAccessManager m_network;

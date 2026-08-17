@@ -1,26 +1,20 @@
 #include "providers/ollama_provider.h"
 
-#include <QCoreApplication>
-#include <QEventLoop>
+#include "async_test_support.h"
+#include "test_support.h"
+
 #include <QHostAddress>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonValue>
-#include <QTextStream>
-#include <QTimer>
 #include <QTcpServer>
 #include <QTcpSocket>
 
 #include <QtMath>
 
 namespace {
-
-bool require(bool condition, const QString &message)
-{
-    if (condition) return true;
-    QTextStream(stderr) << message << Qt::endl;
-    return false;
-}
+using TestSupport::require;
+using TestSupport::runAnalyze;
 
 class FakeOllamaServer final : public QObject
 {
@@ -64,23 +58,6 @@ private:
     QByteArray m_body;
     bool m_responded = false;
 };
-
-AIResponse runAnalyze(OllamaProvider &provider, const AIRequest &request, int timeoutMs = 15000)
-{
-    QEventLoop loop;
-    AIResponse result;
-    bool called = false;
-    provider.analyze(request, [&](AIResponse response) {
-        result = response;
-        called = true;
-        loop.quit();
-    });
-    if (!called) {
-        QTimer::singleShot(timeoutMs, &loop, &QEventLoop::quit);
-        loop.exec();
-    }
-    return result;
-}
 
 bool testRequestBodyBuilding()
 {
@@ -154,9 +131,5 @@ bool testEmptyModelRejected()
 }
 }
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication application(argc, argv);
-    return testRequestBodyBuilding() && testSuccessfulResponse() && testOllamaUnavailable()
-           && testMalformedResponse() && testModelNotFound() && testEmptyModelRejected() ? 0 : 1;
-}
+TEST_SUPPORT_MAIN(testRequestBodyBuilding, testSuccessfulResponse, testOllamaUnavailable, testMalformedResponse,
+                  testModelNotFound, testEmptyModelRejected)
