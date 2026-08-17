@@ -21,6 +21,7 @@ public:
     explicit OllamaProvider(QString baseUrl = QStringLiteral("http://127.0.0.1:11434"),
                             int timeoutMs = 120000,
                             QObject *parent = nullptr);
+    ~OllamaProvider() override;
 
     void analyze(const AIRequest &request, std::function<void(AIResponse)> callback) override;
     QString providerName() const override;

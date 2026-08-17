@@ -263,7 +263,11 @@ void MainWindow::setDocument(const QString &filePath)
 
 void MainWindow::startReview()
 {
-    if (!controller || controller->isRunning()) return;
+    if (!controller) return;
+    if (controller->isRunning()) {
+        controller->cancel();
+        return;
+    }
     const QString model = modelComboBox->currentText();
     const QString baseUrl = QStringLiteral("http://127.0.0.1:11434");
     setControlsRunning(true);
@@ -336,8 +340,8 @@ void MainWindow::onAnalysisFailed(const QString &message)
 void MainWindow::setControlsRunning(bool running)
 {
     selectButton->setEnabled(!running);
-    reviewButton->setEnabled(!running && !documentPath.isEmpty() && !apiKey.isEmpty());
-    reviewButton->setText(running ? tr("Отмена…") : tr("Запустить проверку"));
+    reviewButton->setEnabled(!documentPath.isEmpty()); // Кнопка доступна всегда при наличии документа
+    reviewButton->setText(running ? tr("Отмена") : tr("Запустить проверку"));
 }
 
 void MainWindow::closeEvent(QCloseEvent *event)
@@ -485,7 +489,7 @@ void MainWindow::updateRequirements()
 {
     const bool hasDocument = !documentPath.isEmpty();
     const bool hasApiKey = !apiKey.isEmpty();
-    reviewButton->setEnabled(hasDocument && hasApiKey);
+    reviewButton->setEnabled(hasDocument);
 
     fileRequirementButton->setVisible(!hasDocument);
     keyRequirementButton->setVisible(!hasApiKey);

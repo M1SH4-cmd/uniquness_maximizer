@@ -68,8 +68,10 @@ void ApplicationController::cancel()
     if (m_engine) {
         m_engine->cancel();
     }
-    // Остановка HTTP будет добавлена в Phase 1.5
-    m_running = false;
+    if (m_provider) {
+        m_provider->cancelAll();
+    }
+    // m_running сбрасывается только по сигналу analysisFinished
 }
 
 bool ApplicationController::isRunning() const
